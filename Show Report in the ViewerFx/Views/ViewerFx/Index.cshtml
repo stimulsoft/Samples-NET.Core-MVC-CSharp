@@ -1,0 +1,32 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Show Report in the ViewerFx</h2>
+
+<table>
+    <tr>
+        <td class="reports" valign="top">
+            <div style="width: 150px;">
+                @Html.ActionLink("Simple List", "Index", new { id = "1" })
+                <br />Report Snapshot
+
+                <br /><br />
+                @Html.ActionLink("Two Simple Lists", "Index", new { id = "2" })
+                <br />Report Template
+            </div>
+        </td>
+        <td style="width: 100%;" valign="top">
+            @Html.Stimulsoft().StiMvcViewerFx(new StiMvcViewerFxOptions()
+                {
+                    Actions =
+                    {
+                        GetReport = "GetReport",
+                        ViewerEvent = "ViewerEvent"
+                    }
+                })
+        </td>
+    </tr>
+</table>
