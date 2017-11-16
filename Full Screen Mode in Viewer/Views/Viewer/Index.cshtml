@@ -1,0 +1,26 @@
+﻿@using Stimulsoft.Report.Mvc;
+@using Stimulsoft.Report.Web;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Full Screen Mode in Viewer</h2>
+
+@Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        ViewerEvent = "ViewerEvent"
+    },
+    Appearance =
+    {
+        FullScreenMode = true
+    },
+    Toolbar =
+    {
+        ShowFullScreenButton = false,
+        DisplayMode = StiToolbarDisplayMode.Separated
+    }
+})

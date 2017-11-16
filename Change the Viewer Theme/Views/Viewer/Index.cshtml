@@ -1,0 +1,19 @@
+﻿@using Stimulsoft.Report.Web;
+@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Change the Viewer Theme</h2>
+
+@Html.Stimulsoft().StiMvcViewer(new StiMvcViewerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        ViewerEvent = "ViewerEvent"
+    },
+    
+    Theme = StiViewerTheme.Office2013VeryDarkGrayPurple
+})

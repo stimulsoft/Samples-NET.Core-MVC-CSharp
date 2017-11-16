@@ -1,0 +1,21 @@
+﻿@using Stimulsoft.Report.Mvc;
+
+@{
+    ViewBag.Title = "Stimulsoft Reports.Web Demo";
+}
+
+@Html.Stimulsoft().StiMvcDesigner("StiMvcDesigner1", new StiMvcDesignerOptions()
+{
+    Actions =
+    {
+        GetReport = "GetReport",
+        PreviewReport = "PreviewReport",
+        SaveReport = "SaveReport",
+        DesignerEvent = "DesignerEvent",
+        Exit = "ExitDesigner"
+    },
+    FileMenu =
+    {
+        ShowExit = true
+    }
+})

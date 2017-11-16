@@ -4,10 +4,22 @@
 
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
+* Change the Viewer Theme
 * Edit Report in the Designer
 * Edit Report in the DesignerFx
+* Export and Print Report from Code
+* Full Screen Mode in Viewer
+* Localizing the Viewer
+* Manage Report Printing and Exporting
+* Save Report Template in the Designer
+* Send Report by Email
 * Show Report in the Viewer
 * Show Report in the ViewerFx
+* Showing Interactive Reports
+* Using Business Objects in the Report
+* Using Localizations in the DesignerFx
+* Web Demo
+* Web DemoFx
 
 They are all combined in a Visual Studio solution (.sln-file).
 
