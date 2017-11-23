@@ -23,7 +23,7 @@
     dm.add(103, 1, 'Highlight Condition', '/View/Reports/HighlightCondition');
     dm.add(104, 1, 'Shapes', '/View/Reports/Shapes');
     dm.add(105, 1, 'Images', '/View/Reports/Images');
-    dm.add(106, 1, 'RichText', '/View/Reports/RichText');
+    //dm.add(106, 1, 'RichText', '/View/Reports/RichText');
     dm.add(107, 1, 'Watermark', '/View/Reports/Watermark');
     dm.add(108, 1, 'Bar-Codes', '/View/Reports/BarCodes');
     dm.add(109, 1, 'Invoice', '/View/Reports/Invoice');

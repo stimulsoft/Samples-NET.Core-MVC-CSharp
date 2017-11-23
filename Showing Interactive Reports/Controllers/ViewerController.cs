@@ -33,37 +33,37 @@ namespace Showing_Interactive_Reports.Controllers
             {
                 // Dynamic sorting
                 case 1:
-                    report.Load(StiMvcViewer.MapPath(this, "Reports/DrillDownSorting.mrt"));
+                    report.Load(StiMvcHelper.MapPath(this, "Reports/DrillDownSorting.mrt"));
                     break;
 
                 // Drill down
                 case 2:
-                    report.Load(StiMvcViewer.MapPath(this, "Reports/DrillDownListOfProducts.mrt"));
+                    report.Load(StiMvcHelper.MapPath(this, "Reports/DrillDownListOfProducts.mrt"));
                     break;
 
                 // Collapsing
                 case 3:
-                    report.Load(StiMvcViewer.MapPath(this, "Reports/DrillDownGroupWithCollapsing.mrt"));
+                    report.Load(StiMvcHelper.MapPath(this, "Reports/DrillDownGroupWithCollapsing.mrt"));
                     break;
 
                 // Bookmarks
                 case 4:
-                    report.Load(StiMvcViewer.MapPath(this, "Reports/ParametersSelectingCountry.mrt"));
+                    report.Load(StiMvcHelper.MapPath(this, "Reports/ParametersSelectingCountry.mrt"));
                     break;
 
                 // Parameters
                 case 5:
-                    report.Load(StiMvcViewer.MapPath(this, "Reports/ChartInteraction.mrt"));
+                    report.Load(StiMvcHelper.MapPath(this, "Reports/ChartInteraction.mrt"));
                     break;
 
                 default:
-                    report.Load(StiMvcViewer.MapPath(this, "Reports/DrillDownSorting.mrt"));
+                    report.Load(StiMvcHelper.MapPath(this, "Reports/DrillDownSorting.mrt"));
                     break;
             }
 
             // Load data from XML file for report template
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcViewer.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
             report.Dictionary.Databases.Clear();
             report.RegData(data);
 

@@ -29,11 +29,11 @@ namespace Send_Report_by_Email.Controllers
         {
             // Create the report object
             StiReport report = new StiReport();
-            report.Load(StiMvcViewer.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
 
             // Load data from XML file for report template
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcViewer.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
 
             report.RegData(data);
             

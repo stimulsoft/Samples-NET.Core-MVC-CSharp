@@ -27,7 +27,7 @@ namespace Using_Localizations_in_the_DesignerFx.Controllers
         public IActionResult GetReport()
         {
             StiReport report = new StiReport();
-            report.Load(StiMvcDesignerFx.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
             
             return StiMvcDesignerFx.GetReportResult(this, report);
         }
@@ -35,7 +35,7 @@ namespace Using_Localizations_in_the_DesignerFx.Controllers
         public IActionResult PreviewReport()
         {
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcDesignerFx.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
             
             StiReport report = StiMvcDesignerFx.GetReportObject(this);
             report.RegData(data);

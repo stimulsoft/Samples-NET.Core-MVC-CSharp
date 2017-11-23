@@ -40,13 +40,13 @@ namespace Web_DemoFx.Controllers
                 // {Today} function is used
                 case "MultiColumnListContainers":
                     var data = new DataSet("Demo");
-                    data.ReadXml(StiMvcViewerFx.MapPath(this, "Data/Demo.xml"));
-                    report.Load(StiMvcViewerFx.MapPath(this, "ReportTemplates/" + id + ".mrt"));
+                    data.ReadXml(StiMvcHelper.MapPath(this, "Data/Demo.xml"));
+                    report.Load(StiMvcHelper.MapPath(this, "ReportTemplates/" + id + ".mrt"));
                     report.RegData(data);
                     break;
 
                 default:
-                    report.LoadPackedDocument(StiMvcViewerFx.MapPath(this, "ReportSnapshots/" + id + ".mdz"));
+                    report.LoadPackedDocument(StiMvcHelper.MapPath(this, "ReportSnapshots/" + id + ".mdz"));
                     break;
             }
 

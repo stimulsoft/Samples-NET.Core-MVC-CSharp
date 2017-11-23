@@ -39,11 +39,11 @@ namespace Export_and_Print_Report_from_Code.Controllers
 
         private StiReport GetReport()
         {
-            string reportPath = StiMvcViewer.MapPath(this, "Reports/TwoSimpleLists.mrt");
+            string reportPath = StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt");
             var report = new StiReport();
             report.Load(reportPath);
 
-            string dataPath = StiMvcViewer.MapPath(this, "Reports/Data/Demo.xml");
+            string dataPath = StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml");
             var data = new DataSet("Demo");
             data.ReadXml(dataPath);
             report.RegData(data);

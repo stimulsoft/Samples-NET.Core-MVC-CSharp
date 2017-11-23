@@ -22,7 +22,7 @@ namespace Web_DemoFx.Controllers
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
-            report.Load(StiMvcDesignerFx.MapPath(this, "ReportTemplates/" + id + ".mrt"));
+            report.Load(StiMvcHelper.MapPath(this, "ReportTemplates/" + id + ".mrt"));
 
             return StiMvcDesignerFx.GetReportResult(this, report);
         }
@@ -47,7 +47,7 @@ namespace Web_DemoFx.Controllers
 
             // Register data, if necessary
             var data = new DataSet("Demo");
-            data.ReadXml(StiMvcDesignerFx.MapPath(this, "Data/Demo.xml"));
+            data.ReadXml(StiMvcHelper.MapPath(this, "Data/Demo.xml"));
             report.Dictionary.Databases.Clear();
             report.RegData(data);
 

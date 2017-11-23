@@ -27,7 +27,7 @@ namespace Save_Report_Template_in_the_Designer.Controllers
         public IActionResult GetReport()
         {
             StiReport report = new StiReport();
-            report.Load(StiMvcDesigner.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
             
             return StiMvcDesigner.GetReportResult(this, report);
         }
@@ -37,7 +37,7 @@ namespace Save_Report_Template_in_the_Designer.Controllers
             StiReport report = StiMvcDesigner.GetActionReportObject(this);
 
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcDesigner.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
 
             report.RegData(data);
 

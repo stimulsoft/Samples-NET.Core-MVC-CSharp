@@ -26,7 +26,7 @@ namespace Full_Screen_Mode_in_Viewer.Controllers
         public IActionResult GetReport()
         {
             StiReport report = new StiReport();
-            report.LoadDocument(StiMvcViewer.MapPath(this, "Reports/SimpleList.mdc"));
+            report.LoadDocument(StiMvcHelper.MapPath(this, "Reports/SimpleList.mdc"));
 
             return StiMvcViewer.GetReportResult(this, report);
         }
