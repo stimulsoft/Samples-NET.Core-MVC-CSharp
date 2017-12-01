@@ -37,24 +37,24 @@ namespace Using_Business_Objects_in_the_Report.Controllers
         public IActionResult GetReportIEnumerable()
         {
             StiReport report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "Reports/BusinessObjects_IEnumerable.mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "Reports/BusinessObjects_IEnumerable.mrt"));
             report.RegData("EmployeeIEnumerable", CreateBusinessObjectsIEnumerable.GetEmployees());
 
-            return StiMvcViewer.GetReportResult(this, report);
+            return StiNetCoreViewer.GetReportResult(this, report);
         }
 
         public IActionResult GetReportITypedList()
         {
             StiReport report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "Reports/BusinessObjects_ITypedList.mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "Reports/BusinessObjects_ITypedList.mrt"));
             report.RegData("EmployeeITypedList", CreateBusinessObjectsITypedList.GetEmployees());
 
-            return StiMvcViewer.GetReportResult(this, report);
+            return StiNetCoreViewer.GetReportResult(this, report);
         }
 
         public IActionResult ViewerEvent()
         {
-            return StiMvcViewer.ViewerEventResult(this);
+            return StiNetCoreViewer.ViewerEventResult(this);
         }
     }
 }

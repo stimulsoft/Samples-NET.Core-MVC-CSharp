@@ -34,17 +34,17 @@ namespace Show_Report_in_the_Viewer.Controllers
             {
                 // Load report snapshot
                 case "1":
-                    report.LoadDocument(StiMvcHelper.MapPath(this, "Reports/SimpleList.mdc"));
+                    report.LoadDocument(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mdc"));
                     break;
 
                 // Load report template
                 case "2":
-                    report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
                     break;
 
                 // Load report snapshot
                 default:
-                    report.LoadDocument(StiMvcHelper.MapPath(this, "Reports/SimpleList.mdc"));
+                    report.LoadDocument(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mdc"));
                     break;
             }
 
@@ -52,17 +52,17 @@ namespace Show_Report_in_the_Viewer.Controllers
             if (!report.IsDocument)
             {
                 DataSet data = new DataSet("Demo");
-                data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
+                data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
 
                 report.RegData(data);
             }
 
-            return StiMvcViewer.GetReportResult(this, report);
+            return StiNetCoreViewer.GetReportResult(this, report);
         }
 
         public IActionResult ViewerEvent()
         {
-            return StiMvcViewer.ViewerEventResult(this);
+            return StiNetCoreViewer.ViewerEventResult(this);
         }
     }
 }

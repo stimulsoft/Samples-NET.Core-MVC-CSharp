@@ -39,11 +39,11 @@ namespace Export_and_Print_Report_from_Code.Controllers
 
         private StiReport GetReport()
         {
-            string reportPath = StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt");
+            string reportPath = StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt");
             var report = new StiReport();
             report.Load(reportPath);
 
-            string dataPath = StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml");
+            string dataPath = StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml");
             var data = new DataSet("Demo");
             data.ReadXml(dataPath);
             report.RegData(data);
@@ -54,31 +54,31 @@ namespace Export_and_Print_Report_from_Code.Controllers
         public IActionResult PrintPdf()
         {
             StiReport report = this.GetReport();
-            return StiMvcReportResponse.PrintAsPdf(report);
+            return StiNetCoreReportResponse.PrintAsPdf(report);
         }
 
         public IActionResult PrintHtml()
         {
             StiReport report = this.GetReport();
-            return StiMvcReportResponse.PrintAsHtml(report);
+            return StiNetCoreReportResponse.PrintAsHtml(report);
         }
 
         public IActionResult ExportPdf()
         {
             StiReport report = this.GetReport();
-            return StiMvcReportResponse.ResponseAsPdf(report);
+            return StiNetCoreReportResponse.ResponseAsPdf(report);
         }
 
         public IActionResult ExportHtml()
         {
             StiReport report = this.GetReport();
-            return StiMvcReportResponse.ResponseAsHtml(report);
+            return StiNetCoreReportResponse.ResponseAsHtml(report);
         }
 
         public IActionResult ExportXls()
         {
             StiReport report = this.GetReport();
-            return StiMvcReportResponse.ResponseAsXls(report);
+            return StiNetCoreReportResponse.ResponseAsXls(report);
         }
     }
 }

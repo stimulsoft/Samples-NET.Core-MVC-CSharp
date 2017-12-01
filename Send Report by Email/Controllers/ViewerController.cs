@@ -29,25 +29,25 @@ namespace Send_Report_by_Email.Controllers
         {
             // Create the report object
             StiReport report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
 
             // Load data from XML file for report template
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
 
             report.RegData(data);
             
-            return StiMvcViewer.GetReportResult(this, report);
+            return StiNetCoreViewer.GetReportResult(this, report);
         }
 
         public IActionResult ViewerEvent()
         {
-            return StiMvcViewer.ViewerEventResult(this);
+            return StiNetCoreViewer.ViewerEventResult(this);
         }
 
         public IActionResult EmailReport()
         {
-            StiEmailOptions options = StiMvcViewer.GetEmailOptions(this);
+            StiEmailOptions options = StiNetCoreViewer.GetEmailOptions(this);
 
             options.AddressFrom = "admin@test.com";
             //options.AddressTo = "manager@test.com";
@@ -59,7 +59,7 @@ namespace Send_Report_by_Email.Controllers
             options.UserName = "admin@test.com";
             options.Password = "************";
 
-            return StiMvcViewer.EmailReportResult(this, options);
+            return StiNetCoreViewer.EmailReportResult(this, options);
         }
     }
 }

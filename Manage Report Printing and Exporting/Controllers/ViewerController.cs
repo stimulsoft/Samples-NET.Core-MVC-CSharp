@@ -8,6 +8,7 @@ using Stimulsoft.Report;
 using System.Data;
 using Stimulsoft.Report.Mvc;
 using Stimulsoft.Report.Web;
+using Stimulsoft.Report.Export;
 
 namespace Manage_Report_Printing_and_Exporting.Controllers
 {
@@ -29,42 +30,50 @@ namespace Manage_Report_Printing_and_Exporting.Controllers
         {
             // Create the report object
             StiReport report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
 
             // Load data from XML file for report template
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
 
             report.RegData(data);
             
-            return StiMvcViewer.GetReportResult(this, report);
+            return StiNetCoreViewer.GetReportResult(this, report);
         }
 
         public IActionResult ViewerEvent()
         {
-            return StiMvcViewer.ViewerEventResult(this);
+            return StiNetCoreViewer.ViewerEventResult(this);
         }
 
         public IActionResult PrintReport()
         {
-            StiReport report = StiMvcViewer.GetReportObject(this);
+            StiReport report = StiNetCoreViewer.GetReportObject(this);
 
             // Some actions with report when printing
 
-            return StiMvcViewer.PrintReportResult(this, report);
+            return StiNetCoreViewer.PrintReportResult(this, report);
         }
 
         public IActionResult ExportReport()
         {
-            StiReport report = StiMvcViewer.GetReportObject(this);
-            StiRequestParams parameters = StiMvcViewer.GetRequestParams(this);
+            StiReport report = StiNetCoreViewer.GetReportObject(this);
+            StiRequestParams parameters = StiNetCoreViewer.GetRequestParams(this);
+
+            // Some actions with report when exporting
+            report.ReportName = "MyReportName";
+            report.ReportAlias = report.ReportName;
 
             if (parameters.ExportFormat == StiExportFormat.Pdf)
             {
-                // Some actions with report when exporting to PDF
+                // Change some export settings when exporting to PDF
+                StiPdfExportSettings settings = (StiPdfExportSettings)StiNetCoreViewer.GetExportSettings(this);
+                settings.CreatorString = "My Company";
+
+                return StiNetCoreViewer.ExportReportResult(this, report, settings);
             }
             
-            return StiMvcViewer.ExportReportResult(this, report);
+            return StiNetCoreViewer.ExportReportResult(this, report);
         }
     }
 }

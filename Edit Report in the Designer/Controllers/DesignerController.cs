@@ -27,25 +27,25 @@ namespace Edit_Report_in_the_Designer.Controllers
         public IActionResult GetReport()
         {
             StiReport report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
             
-            return StiMvcDesigner.GetReportResult(this, report);
+            return StiNetCoreDesigner.GetReportResult(this, report);
         }
 
         public IActionResult PreviewReport()
         {
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
 
-            StiReport report = StiMvcDesigner.GetActionReportObject(this);
+            StiReport report = StiNetCoreDesigner.GetActionReportObject(this);
             report.RegData(data);
 
-            return StiMvcDesigner.PreviewReportResult(this, report);
+            return StiNetCoreDesigner.PreviewReportResult(this, report);
         }
 
         public IActionResult DesignerEvent()
         {
-            return StiMvcDesigner.DesignerEventResult(this);
+            return StiNetCoreDesigner.DesignerEventResult(this);
         }
     }
 }

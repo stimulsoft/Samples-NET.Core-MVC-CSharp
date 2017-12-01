@@ -22,14 +22,14 @@ namespace Web_Demo.Controllers
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "ReportTemplates/" + id + ".mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "ReportTemplates/" + id + ".mrt"));
 
-            return StiMvcDesigner.GetReportResult(this, report);
+            return StiNetCoreDesigner.GetReportResult(this, report);
         }
 
         public IActionResult SaveReport()
         {
-            StiReport report = StiMvcDesigner.GetReportObject(this);
+            StiReport report = StiNetCoreDesigner.GetReportObject(this);
 
             // string packedReport = report.SavePackedReportToString();
             // ...
@@ -37,27 +37,27 @@ namespace Web_Demo.Controllers
             // ...
 
             // Completion of the report saving without dialog box
-            return StiMvcDesigner.SaveReportResult(this);
+            return StiNetCoreDesigner.SaveReportResult(this);
         }
 
         public IActionResult PreviewReport()
         {
             // Get the report template
-            StiReport report = StiMvcDesigner.GetActionReportObject(this);
+            StiReport report = StiNetCoreDesigner.GetActionReportObject(this);
 
             // Register data, if necessary
             var data = new DataSet("Demo");
-            data.ReadXml(StiMvcHelper.MapPath(this, "Data/Demo.xml"));
+            data.ReadXml(StiNetCoreHelper.MapPath(this, "Data/Demo.xml"));
             report.Dictionary.Databases.Clear();
             report.RegData(data);
 
             // Return the report snapshot result to the client
-            return StiMvcDesigner.PreviewReportResult(this, report);
+            return StiNetCoreDesigner.PreviewReportResult(this, report);
         }
 
         public IActionResult DesignerEvent()
         {
-            return StiMvcDesigner.DesignerEventResult(this);
+            return StiNetCoreDesigner.DesignerEventResult(this);
         }
 
         public IActionResult ExitDesigner(string id)

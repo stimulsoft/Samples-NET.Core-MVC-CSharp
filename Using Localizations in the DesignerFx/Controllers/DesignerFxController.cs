@@ -27,25 +27,25 @@ namespace Using_Localizations_in_the_DesignerFx.Controllers
         public IActionResult GetReport()
         {
             StiReport report = new StiReport();
-            report.Load(StiMvcHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
+            report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
             
-            return StiMvcDesignerFx.GetReportResult(this, report);
+            return StiNetCoreDesignerFx.GetReportResult(this, report);
         }
 
         public IActionResult PreviewReport()
         {
             DataSet data = new DataSet("Demo");
-            data.ReadXml(StiMvcHelper.MapPath(this, "Reports/Data/Demo.xml"));
+            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
             
-            StiReport report = StiMvcDesignerFx.GetReportObject(this);
+            StiReport report = StiNetCoreDesignerFx.GetReportObject(this);
             report.RegData(data);
 
-            return StiMvcDesignerFx.PreviewReportResult(this, report);
+            return StiNetCoreDesignerFx.PreviewReportResult(this, report);
         }
 
         public IActionResult DesignerEvent()
         {
-            return StiMvcDesignerFx.DesignerEventResult(this);
+            return StiNetCoreDesignerFx.DesignerEventResult(this);
         }
     }
 }

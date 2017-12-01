@@ -1657,5 +1657,8 @@
     <SearchLibraries>Поиск библиотек...</SearchLibraries>
     <DownloadingLibraries>Загрузка библиотек...</DownloadingLibraries>
     <CopyingLibraries>Копирование файлов проекта...</CopyingLibraries>
+    <AddNewConnection>Добавить новое соединение</AddNewConnection>
+    <ReplaceConnectionString>Заменить строку подключения</ReplaceConnectionString>
+    <ReplacePathToData>Заменить путь к данным</ReplacePathToData>
   </Publish>
 </Localization>

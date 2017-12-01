@@ -1898,5 +1898,8 @@
     <SearchLibraries>Search for libraries...</SearchLibraries>
     <DownloadingLibraries>Downloading libraries...</DownloadingLibraries>
     <CopyingLibraries>Copying project files...</CopyingLibraries>
+    <AddNewConnection>Add New Connection</AddNewConnection>
+    <ReplaceConnectionString>Replace Connection String</ReplaceConnectionString>
+    <ReplacePathToData>Replace Path to the Data</ReplacePathToData>
   </Publish>
 </Localization>

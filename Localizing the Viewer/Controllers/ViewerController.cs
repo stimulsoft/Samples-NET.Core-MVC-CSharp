@@ -26,14 +26,14 @@ namespace Localizing_the_Viewer.Controllers
         public IActionResult GetReport()
         {
             StiReport report = new StiReport();
-            report.LoadDocument(StiMvcHelper.MapPath(this, "Reports/SimpleList.mdc"));
+            report.LoadDocument(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mdc"));
             
-            return StiMvcViewer.GetReportResult(this, report);
+            return StiNetCoreViewer.GetReportResult(this, report);
         }
 
         public IActionResult ViewerEvent()
         {
-            return StiMvcViewer.ViewerEventResult(this);
+            return StiNetCoreViewer.ViewerEventResult(this);
         }
     }
 }
