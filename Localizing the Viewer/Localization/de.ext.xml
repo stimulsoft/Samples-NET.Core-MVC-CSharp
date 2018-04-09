@@ -270,7 +270,8 @@
     <ParametersFromReport>Einen Wert aus dem Bericht verwenden</ParametersFromReport>
     <ParametersReplace>Einen Wert aus dem Code ersetzen</ParametersReplace>
     <ParametersRequestFromUser>Anfrage vom Benutzer</ParametersRequestFromUser>
-    <PublishType>Veroffentlichungstyp des Berichts:</PublishType>
+    <Publish>Veröffentlichen</Publish>
+	<PublishType>Veroffentlichungstyp des Berichts:</PublishType>
     <PublishTypeProject>Projekt</PublishTypeProject>
     <PublishTypeStandalone>Standalone</PublishTypeStandalone>
     <RegDataOnlyForPreview>Nur fur Berichtsvorschau verwenden</RegDataOnlyForPreview>
