@@ -11,6 +11,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Full Screen Mode in Viewer
 * Localizing the Viewer
 * Manage Report Printing and Exporting
+* Render Report in the Console App
 * Save Report Template in the Designer
 * Send Report by Email
 * Show Report in the Viewer
@@ -18,6 +19,7 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Showing Interactive Reports
 * Using Business Objects in the Report
 * Using Localizations in the DesignerFx
+* Using the Web API with Angular
 * Web Demo
 * Web DemoFx
 
