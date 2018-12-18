@@ -15,6 +15,7 @@ namespace Send_Report_by_Email.Controllers
     {
         static ViewerController()
         {
+            // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
             //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);

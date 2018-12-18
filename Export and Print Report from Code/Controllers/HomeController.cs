@@ -13,6 +13,14 @@ namespace Export_and_Print_Report_from_Code.Controllers
 {
     public class HomeController : Controller
     {
+        static HomeController()
+        {
+            // How to Activate
+            //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
+            //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
+            //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+        }
+
         public IActionResult Index()
         {
             return View();

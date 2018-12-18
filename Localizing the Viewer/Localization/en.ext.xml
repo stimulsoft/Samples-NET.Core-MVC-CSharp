@@ -56,7 +56,9 @@
     <StiVerySmallSizesOfComponentsLong>The size of a component will be increased to the GridSize value of a report. This operation does not guarantee the 100% correct fix!</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>Increase size</StiVerySmallSizesOfComponentsShort>
     <StiWordWrapCanGrowTextDoesNotFitActionLong>Set the value of the CanGrow property of the component to true.</StiWordWrapCanGrowTextDoesNotFitActionLong>
-	<Zero>Zero</Zero>
+	  <Zero>Zero</Zero>
+    <StiApplyGeneralTextFormatShort>Apply General</StiApplyGeneralTextFormatShort>
+    <StiApplyGeneralTextFormatLong>Set the 'General' format for the '{0}' component.</StiApplyGeneralTextFormatLong>
   </CheckActions>
   <CheckComponent>
     <StiAllowHtmlTagsInTextCheckLong>HTML tags are used in the text. But the AllowHtmlTags property is set to false. The content of the {0} component will be printed incorrectly.</StiAllowHtmlTagsInTextCheckLong>
@@ -160,6 +162,8 @@
     <StiWidthHeightZeroComponentCheckShortWidthHeight>The height and width of the '{0}' component are equal to 0</StiWidthHeightZeroComponentCheckShortWidthHeight>
     <StiWordWrapCanGrowTextDoesNotFitLong>If the WordWrap property is set to true, and the CanGrow property is set to false, then the text of the {0} component cannot be shown completely. It is recommended to set the CanGrow property to true.</StiWordWrapCanGrowTextDoesNotFitLong>
     <StiWordWrapCanGrowTextDoesNotFitShort>The text may not fit</StiWordWrapCanGrowTextDoesNotFitShort>
+    <StiTextTextFormatCheckShort>The format is not specified.</StiTextTextFormatCheckShort>
+    <StiTextTextFormatCheckLong>The selected format for the '{0}' component is not specified.</StiTextTextFormatCheckLong>
   </CheckComponent>
   <CheckConnection>
     <StiUndefinedConnectionCheckLong>Undefined '{0}' connection is found. The reporting tool cannot correctly process such type of connection with the database! May be the customer types of connections are used in the report. This report cannot be rendered!</StiUndefinedConnectionCheckLong>
@@ -223,6 +227,10 @@
   <CheckVariable>
     <StiVariableRecursionCheckLong>The '{0}' variable has a expression with recursion. It's impossible to refer to the Variable in its own expression.</StiVariableRecursionCheckLong>
     <StiVariableRecursionCheckShort>Recursive Expression</StiVariableRecursionCheckShort>
+    <StiVariableTypeCheckShort>Variable types do not match.</StiVariableTypeCheckShort>
+    <StiVariableTypeCheckLong>For the dependent variables to work correctly, their types and the types of their columns must match.</StiVariableTypeCheckLong>
+    <StiVariableInitializationCheckLong>The '{0}' variable has the wrong default value. It is impossible to initialize the variable with a specified value.</StiVariableInitializationCheckLong>
+    <StiVariableInitializationCheckShort>Initialization value</StiVariableInitializationCheckShort>
   </CheckVariable>
   <Font>
     <Bold>A value that indicates whether this Font is bold.</Bold>
@@ -606,7 +614,60 @@
     <Table>Chart table settings.</Table>
     <Title>Chart title settings.</Title>
     <VertSpacing>Vertical space between border of the chart and the chart.</VertSpacing>
-  </StiChart>
+  </StiChart>  
+  <StiChartElement>
+    <Arguments>Chart arguments.</Arguments>
+    <Values>Chart values.</Values>
+    <EndValues>End values of a chart.</EndValues>
+    <CloseValues>Close values of a chart.</CloseValues>
+    <LowValues>Low values of a chart.</LowValues>
+    <HighValues>High values of a chart.</HighValues>
+    <Weights>Weight values of a chart.</Weights>
+    <Series>Chart series.</Series>
+    <ColorEach></ColorEach>
+    <Group></Group>
+    <Style>A style of a chart.</Style>
+    <TextFormat>The text format.</TextFormat>
+    <Title>Chart title.</Title>
+  </StiChartElement>
+  <StiTableElement>
+    <Columns>Columns displayed in the table</Columns>
+    <SizeMode></SizeMode>
+    <Group></Group>
+    <Title>Table title.</Title>
+    <Style>Table style.</Style>
+  </StiTableElement>
+  <StiTitle>
+    <BackColor>Background color for a title.</BackColor>
+    <ForeColor>Fore color for a title.</ForeColor>
+    <Text>Text of a title.</Text>
+    <Font>Font of a title.</Font>
+    <HorAlignment>Horizontal alignment of text.</HorAlignment>
+    <Visible>Title visibility.</Visible>
+  </StiTitle>
+  <StiElement>
+    <BackColor>A back color for the element.</BackColor>
+    <Margin>Element margin.</Margin>
+    <Padding>Element margin.</Padding>
+  </StiElement>
+  <StiSimpleBorder>
+    <Color>A border color.</Color>
+    <Side>Frame borders.</Side>
+    <Size>A border size.</Size>
+    <Style>A border style.</Style>
+  </StiSimpleBorder>
+  <StiMargin>
+    <Left>The value sets a margin from the left edge of the element.</Left>
+    <Right>The value sets a margin from the right edge of the element.</Right>
+    <Top>The value sets a margin from the top edge of the element.</Top>
+    <Bottom>The value sets a margin from the bottom edge of the element.</Bottom>
+  </StiMargin>
+  <StiPadding>
+    <Left>The value sets the padding inside the element from the left border and its contents.</Left>
+    <Right>The value sets the padding inside the element from the right border and its contents.</Right>
+    <Top>The value sets the padding inside the element from the top border and its contents.</Top>
+    <Bottom>The value sets the padding inside the element from the bottom border and its contents.</Bottom>
+  </StiPadding>
   <StiChartTable>
     <Font>Font of the chart table.</Font>
     <GridLineColor>A color of the grid lines.</GridLineColor>
@@ -820,6 +881,7 @@
     <GetDisplayCrossValueEvent>A script of the event GetDisplayCrossValueEvent.</GetDisplayCrossValueEvent>
     <HideZeros>A value indicates that no need show zeroes.</HideZeros>
     <MergeHeaders>A value indicates that all equal values of header will be merged into one.</MergeHeaders>
+    <KeepMergedCellsTogether>A value indicates that merged cells will not separate to next page.</KeepMergedCellsTogether>
     <PrintOnAllPages>A value indicates that the component is printed on all pages.</PrintOnAllPages>
     <ShowPercents>A value indicates that value in cell must be shown as percents.</ShowPercents>
     <ShowTotal>A value that indicates whether it is necessary to output totals or not.</ShowTotal>
@@ -1836,7 +1898,7 @@
   </Universal>
   <Publish>
     <Publish>Publish</Publish>
-	<DeployReportPlatform>Deploy Report to Platform:</DeployReportPlatform>
+    <DeployReportPlatform>Deploy Report to Platform:</DeployReportPlatform>
     <PublishType>Report Publish Type:</PublishType>
     <PublishTypeProject>Project</PublishTypeProject>
     <PublishTypeStandalone>Standalone</PublishTypeStandalone>
@@ -1871,8 +1933,9 @@
     <RegDataSynchronize>Synchronize Report Dictionary</RegDataSynchronize>
     <RegDataOnlyForPreview>Use Only for Report Preview</RegDataOnlyForPreview>
     <ParametersFromReport>Use Value from Report</ParametersFromReport>
-    <ParametersReplace>Replace Value from Code</ParametersReplace>
+    <ParametersReplace>Replace Value from {0}Code</ParametersReplace>
     <ParametersRequestFromUser>Request from User</ParametersRequestFromUser>
+    <ParametersReplacePhpInfo>The parameter will be removed from the report dictionary and can be used only in the SQL query.</ParametersReplacePhpInfo>
     <IncludeLicenseKey>Include License Key</IncludeLicenseKey>
     <LicenseKeyTypeString>String</LicenseKeyTypeString>
     <LicenseKeyTypeFile>File</LicenseKeyTypeFile>
@@ -1903,5 +1966,6 @@
     <AddNewConnection>Add New Connection</AddNewConnection>
     <ReplaceConnectionString>Replace Connection String</ReplaceConnectionString>
     <ReplacePathToData>Replace Path to the Data</ReplacePathToData>
+    <Use>Use</Use>
   </Publish>
 </Localization>
