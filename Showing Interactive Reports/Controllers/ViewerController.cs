@@ -54,7 +54,7 @@ namespace Showing_Interactive_Reports.Controllers
 
                 // Parameters
                 case 5:
-                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/ChartInteraction.mrt"));
+                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/InteractiveCharts.mrt"));
                     break;
 
                 default:
