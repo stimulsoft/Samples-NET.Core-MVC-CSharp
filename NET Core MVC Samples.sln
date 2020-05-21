@@ -1,17 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2009
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web Demo", "Web Demo\Web Demo.csproj", "{07EFAC6A-9676-47D0-9A0C-94D7843A306A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Show Report in the Viewer", "Show Report in the Viewer\Show Report in the Viewer.csproj", "{9DD05AB1-9FC1-46B6-A507-A9007DFFBB0D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Show Report in the ViewerFx", "Show Report in the ViewerFx\Show Report in the ViewerFx.csproj", "{28DF6C22-60B4-4F8B-B748-D5FC8F8C997C}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edit Report in the Designer", "Edit Report in the Designer\Edit Report in the Designer.csproj", "{E420937B-8B4D-4095-9F46-0EEFA3F1665B}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Edit Report in the DesignerFx", "Edit Report in the DesignerFx\Edit Report in the DesignerFx.csproj", "{DFBFBE74-37A7-4D90-9072-8C8ACA4F2DCC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Change the Viewer Theme", "Change the Viewer Theme\Change the Viewer Theme.csproj", "{B540062D-1541-4489-B727-DCA94589EE4D}"
 EndProject
@@ -31,13 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Export and Print Report fro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Save Report Template in the Designer", "Save Report Template in the Designer\Save Report Template in the Designer.csproj", "{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using Localizations in the DesignerFx", "Using Localizations in the DesignerFx\Using Localizations in the DesignerFx.csproj", "{07FDC4CA-D6F6-4519-B123-B813DEA533E1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Web DemoFx", "Web DemoFx\Web DemoFx.csproj", "{AB513305-D22D-4369-B16E-AE3D937865D6}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using the Web API with Angular", "Using the Web API with Angular\Using the Web API with Angular.csproj", "{74A520BF-0D4D-437E-90E3-27A5B074AE75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Render Report in the Console App", "Render Report in the Console App\Render Report in the Console App.csproj", "{3CA3099F-8E1F-4C97-85D3-B5B3165578C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Render Report in the Console App", "Render Report in the Console App\Render Report in the Console App.csproj", "{3CA3099F-8E1F-4C97-85D3-B5B3165578C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,18 +45,10 @@ Global
 		{9DD05AB1-9FC1-46B6-A507-A9007DFFBB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DD05AB1-9FC1-46B6-A507-A9007DFFBB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DD05AB1-9FC1-46B6-A507-A9007DFFBB0D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{28DF6C22-60B4-4F8B-B748-D5FC8F8C997C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{28DF6C22-60B4-4F8B-B748-D5FC8F8C997C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{28DF6C22-60B4-4F8B-B748-D5FC8F8C997C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{28DF6C22-60B4-4F8B-B748-D5FC8F8C997C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E420937B-8B4D-4095-9F46-0EEFA3F1665B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E420937B-8B4D-4095-9F46-0EEFA3F1665B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E420937B-8B4D-4095-9F46-0EEFA3F1665B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E420937B-8B4D-4095-9F46-0EEFA3F1665B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFBFBE74-37A7-4D90-9072-8C8ACA4F2DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFBFBE74-37A7-4D90-9072-8C8ACA4F2DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFBFBE74-37A7-4D90-9072-8C8ACA4F2DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFBFBE74-37A7-4D90-9072-8C8ACA4F2DCC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B540062D-1541-4489-B727-DCA94589EE4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B540062D-1541-4489-B727-DCA94589EE4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B540062D-1541-4489-B727-DCA94589EE4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -101,14 +85,6 @@ Global
 		{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{07FDC4CA-D6F6-4519-B123-B813DEA533E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{07FDC4CA-D6F6-4519-B123-B813DEA533E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{07FDC4CA-D6F6-4519-B123-B813DEA533E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{07FDC4CA-D6F6-4519-B123-B813DEA533E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AB513305-D22D-4369-B16E-AE3D937865D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AB513305-D22D-4369-B16E-AE3D937865D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AB513305-D22D-4369-B16E-AE3D937865D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AB513305-D22D-4369-B16E-AE3D937865D6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Release|Any CPU.ActiveCfg = Release|Any CPU

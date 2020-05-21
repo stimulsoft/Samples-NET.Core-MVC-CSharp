@@ -1,12 +1,11 @@
 # ASP.NET Core C# samples for Stimulsoft Reports.Web
 
-#### This repository contains the source code of the examples of usage Stimulsoft Reports.Web reporting tool in the ASP.NET Core applications, using C# code and HTML5/Flash components. This product and examples are compatible with .NET Core 2.0 and higher.
+#### This repository contains the source code of the examples of usage Stimulsoft Reports.Web reporting tool in the ASP.NET Core applications, using C# code and HTML5 components. This product and examples are compatible with .NET Core 2.0 and higher.
 
 # Overview
 This repository has some examples (Visual Studio Projects) each in different folders:
 * Change the Viewer Theme
 * Edit Report in the Designer
-* Edit Report in the DesignerFx
 * Export and Print Report from Code
 * Full Screen Mode in Viewer
 * Localizing the Viewer
@@ -15,13 +14,10 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Save Report Template in the Designer
 * Send Report by Email
 * Show Report in the Viewer
-* Show Report in the ViewerFx
 * Showing Interactive Reports
 * Using Business Objects in the Report
-* Using Localizations in the DesignerFx
 * Using the Web API with Angular
 * Web Demo
-* Web DemoFx
 
 They are all combined in a Visual Studio solution (.sln-file).
 
