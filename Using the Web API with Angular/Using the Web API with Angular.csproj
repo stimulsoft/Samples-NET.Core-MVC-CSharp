@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.4" />
-    <PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2020.2.3" />
+    <PackageReference Include="Stimulsoft.Reports.Web.NetCore" Version="2020.3.2" />
   </ItemGroup>
 
   <ItemGroup>

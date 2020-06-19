@@ -50,7 +50,7 @@
     <PreviousPage>الصفحة السابقة</PreviousPage>
     <PrintContinue>اضغط طباعة للمواصلة</PrintContinue>
     <PrintReport>طباعة</PrintReport>
-    <PrintToPdf>طباعة لـ PDF</PrintToPdf>
+    <PrintToPdf>PDF</PrintToPdf>
     <PrintToXps>طباعة لـ XPS</PrintToXps>
     <PrintWithoutPreview>طباعة بدون معاينة</PrintWithoutPreview>
     <PrintWithPreview>طباعة مع معاينة</PrintWithPreview>
@@ -840,7 +840,7 @@
     <GifFiles>صورة GIF image (*.gif)|*.gif</GifFiles>
     <HtmlFiles>ملف HTML (*.html)|*.html</HtmlFiles>
     <InheritedLanguageFiles>{0} ملفات لـ inherited reports (*.{1})|*.{2}</InheritedLanguageFiles>
-    <JpegFiles>صورة JPEG (*.jpeg)|*.jpeg</JpegFiles>
+    <JpegFiles>صورة JPEG (*.jpg;*.jpeg)|*.jpg;*.jpeg</JpegFiles>
     <JsonDocumentFiles>JSON مستندات تقرير (*.mdc)|*.mdc</JsonDocumentFiles>
     <JsonFiles>JSON ملفات (*.json)|*.json</JsonFiles>
     <JsonReportFiles>JSON نماذج تقرير (*.mrt)|*.mrt</JsonReportFiles>
@@ -901,6 +901,16 @@
     <date10>*F</date10>
     <date11>MM.dd.yyyy</date11>
     <date12>dd/MM/yyyy</date12>
+    <date13>*g</date13>
+    <date14>*G</date14>
+    <date15>*y</date15>
+    <date16>*m</date16>
+    <date17>s</date17>
+    <date18>u</date18>
+    <date19>*Q</date19>
+    <date20>*YQ</date20>
+    <date21>QI</date21>
+    <date22>YQI</date22>
     <time01>*t</time01>
     <time02>*T</time02>
     <time03>HH:mm</time03>
@@ -1948,15 +1958,15 @@
   </Messages>
   <Notices>
     <AccessDenied>ممنوع الدخول!</AccessDenied>
-    <ActivationExpiriedBeforeFirstRelease>اشتراكك في Stimulsoft Reports.Ultimate قد انتهت فترته قبل اصدار اول نسخة من Stimulsoft Reports.Server</ActivationExpiriedBeforeFirstRelease>
+    <ActivationExpiriedBeforeFirstRelease>اشتراكك في Stimulsoft Reports.Ultimate قد انتهت فترته قبل اصدار اول نسخة من Stimulsoft Server</ActivationExpiriedBeforeFirstRelease>
     <ActivationLicenseIsNotCorrect>ملف الترخيص غير صحيح! يرجى التواصل مع إدارة المبيعات sales@stimulsoft.com!</ActivationLicenseIsNotCorrect>
     <ActivationLockedAccount>حسابك مقفل. يرجى التواصل مع إدارة المبيعات على sales@stimulsoft.com!</ActivationLockedAccount>
     <ActivationMaxActivationsReached>لقد وصلت إلى الحد الأقصى من التنشيطات. يرجى التواصل مع إدارة المبيعات على sales@stimulsoft.com!</ActivationMaxActivationsReached>
     <ActivationServerIsNotAvailableNow>خادم التنشيط لـ Stimulsoft غير متوفر الآن ! يرجى المحاولة لاحقاً.</ActivationServerIsNotAvailableNow>
-    <ActivationServerVersionNotAllowed>لا يمكن تنشيط هذه النسخة من  Stimulsoft Reports.Server حيث أن برنامج اشتراكك قد انتهى! يرجى الدخول لحسابك والتحقق من نسخة  Stimulsoft Reports.Server التي تستطيع تنصيبها وتنشيطها.</ActivationServerVersionNotAllowed>
+    <ActivationServerVersionNotAllowed>لا يمكن تنشيط هذه النسخة من  Stimulsoft Server حيث أن برنامج اشتراكك قد انتهى! يرجى الدخول لحسابك والتحقق من نسخة  Stimulsoft Server التي تستطيع تنصيبها وتنشيطها.</ActivationServerVersionNotAllowed>
     <ActivationSomeTroublesOccurred>حدث خطأ أثناء التنشيط. يرجى المحاولة لاحقاً.</ActivationSomeTroublesOccurred>
     <ActivationUserNameOrPasswordIsWrong>اسم المستخدم (البريد الإلكتروني) أو كلمة المرور خاطئة!</ActivationUserNameOrPasswordIsWrong>
-    <ActivationWrongAccountType>نوع حسابك لا يسمح بتنشيط Stimulsoft Reports.Server!</ActivationWrongAccountType>
+    <ActivationWrongAccountType>نوع حسابك لا يسمح بتنشيط Stimulsoft Server!</ActivationWrongAccountType>
     <AuthAccountCantBeUsedNow>لا يمكن استخدام الحساب الآن!</AuthAccountCantBeUsedNow>
     <AuthAccountIsNotActivated>.الحساب غير منشط بعد! يرجى اتباع التعليمات المرسلة إلى البريد الاكتروني أثناء التسجيل</AuthAccountIsNotActivated>
     <AuthCantChangeRoleBecauseLastAdministratorUser>لا يمكن تغيير دور المستخدم لكونه المسؤول الأخير في مساحة العمل!</AuthCantChangeRoleBecauseLastAdministratorUser>

@@ -20,12 +20,8 @@ namespace Render_Report_in_the_Console_App
 
             Console.Write("Loading report and data... ");
 
-            var dataSet = new DataSet();
-            dataSet.ReadXml($"{ReportsDirectory}/Data/Demo.xml");
-
             var report = new StiReport();
             report.Load($"{ReportsDirectory}/TwoSimpleLists.mrt");
-            report.RegData(dataSet);
 
             Console.WriteLine("OK");
             Console.Write("Rendering and exporting a report... ");

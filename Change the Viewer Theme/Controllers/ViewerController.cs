@@ -26,7 +26,7 @@ namespace Change_the_Viewer_Theme.Controllers
 
         public IActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.LoadDocument(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mdc"));
             
             return StiNetCoreViewer.GetReportResult(this, report);

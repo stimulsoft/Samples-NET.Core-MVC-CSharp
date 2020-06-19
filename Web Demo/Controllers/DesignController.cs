@@ -18,7 +18,7 @@ namespace Web_Demo.Controllers
             return View();
         }
 
-        public IActionResult GetReport(string id)
+        public IActionResult GetReport(string id = "SimpleList")
         {
             // Create the report object and load data from xml file
             var report = new StiReport();
@@ -29,7 +29,7 @@ namespace Web_Demo.Controllers
 
         public IActionResult SaveReport()
         {
-            StiReport report = StiNetCoreDesigner.GetReportObject(this);
+            var report = StiNetCoreDesigner.GetReportObject(this);
 
             // string packedReport = report.SavePackedReportToString();
             // ...
@@ -43,7 +43,7 @@ namespace Web_Demo.Controllers
         public IActionResult PreviewReport()
         {
             // Get the report template
-            StiReport report = StiNetCoreDesigner.GetActionReportObject(this);
+            var report = StiNetCoreDesigner.GetActionReportObject(this);
 
             // Register data, if necessary
             var data = new DataSet("Demo");
@@ -62,7 +62,7 @@ namespace Web_Demo.Controllers
 
         public IActionResult ExitDesigner(string id)
         {
-            return RedirectToAction("Reports", "View", new { id = id });
+            return RedirectToAction("Reports", "View", new { id });
         }
     }
 }

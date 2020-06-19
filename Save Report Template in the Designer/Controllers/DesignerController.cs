@@ -27,30 +27,18 @@ namespace Save_Report_Template_in_the_Designer.Controllers
 
         public IActionResult GetReport()
         {
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
             
             return StiNetCoreDesigner.GetReportResult(this, report);
         }
 
-        public IActionResult PreviewReport()
-        {
-            StiReport report = StiNetCoreDesigner.GetActionReportObject(this);
-
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
-
-            report.RegData(data);
-
-            return StiNetCoreDesigner.PreviewReportResult(this, report);
-        }
-
         public IActionResult SaveReport()
         {
-            StiReport report = StiNetCoreDesigner.GetReportObject(this);
+            var report = StiNetCoreDesigner.GetReportObject(this);
             
             // Save the report template, for example to JSON string
-            string json = report.SaveToJsonString();
+            var json = report.SaveToJsonString();
             
             return StiNetCoreDesigner.SaveReportResult(this);
         }

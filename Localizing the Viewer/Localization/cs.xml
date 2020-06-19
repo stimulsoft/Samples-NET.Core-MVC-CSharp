@@ -30,7 +30,7 @@
     <PreviousPage>Předchozí stránka</PreviousPage>
     <PrintContinue>Pro pokračování klikněte na Tisk</PrintContinue>
     <PrintReport>Tisk</PrintReport>
-    <PrintToPdf>Tisk do PDF</PrintToPdf>
+    <PrintToPdf>PDF</PrintToPdf>
     <PrintToXps>Tisk do XPS</PrintToXps>
     <PrintWithoutPreview>Tisk bez náhledu</PrintWithoutPreview>
     <PrintWithPreview>Tisk s náhledem</PrintWithPreview>
@@ -228,10 +228,10 @@
     <AxesTicksMinor>Vedlejší</AxesTicksMinor>
     <AxesTicksNone>Žádné</AxesTicksNone>
     <AxesVisible>Viditilné</AxesVisible>
-    <AxesXAxis>Osa x</AxesXAxis>
-    <AxesXTopAxis>Maximum na ose x</AxesXTopAxis>
-    <AxesYAxis>Osa y</AxesYAxis>
-    <AxesYRightAxis>Maximum na ose y</AxesYRightAxis>
+    <AxesXAxis>Osa X</AxesXAxis>
+    <AxesXTopAxis>Osa X Horní</AxesXTopAxis>
+    <AxesYAxis>Osa Y</AxesYAxis>
+    <AxesYRightAxis>Osa Y Pravá</AxesYRightAxis>
     <CenterLabels>Střed</CenterLabels>
     <ChangeType>Změnit typ</ChangeType>
     <GridLines>Řádky mřížky</GridLines>
@@ -620,7 +620,7 @@
     <GifFiles>GIF obrázek (*.gif)|*.gif</GifFiles>
     <HtmlFiles>HTML Soubory (*.html)|*.html</HtmlFiles>
     <InheritedLanguageFiles>{0} soubory pro zděděné sestavy (*.{1})|*.{2}</InheritedLanguageFiles>
-    <JpegFiles>JPEG obrázek (*.jpeg)|*.jpeg</JpegFiles>
+    <JpegFiles>JPEG obrázek (*.jpg;*.jpeg)|*.jpg;*.jpeg</JpegFiles>
     <LanguageFiles>{0} soubory (*.{1})|*.{2}</LanguageFiles>
     <LanguageForSilverlightFiles>{0} soubory pro Silverlight reporty (*.{1})|*.{2}</LanguageForSilverlightFiles>
     <MetaFiles>Meta soubory</MetaFiles>
@@ -677,6 +677,16 @@
     <date10>*F</date10>
     <date11>MM.dd.yyyy</date11>
     <date12>dd/MM/yyyy</date12>
+    <date13>*g</date13>
+    <date14>*G</date14>
+    <date15>*y</date15>
+    <date16>*m</date16>
+    <date17>s</date17>
+    <date18>u</date18>
+    <date19>*Q</date19>
+    <date20>*YQ</date20>
+    <date21>QI</date21>
+    <date22>YQI</date22>
     <time01>t</time01>
     <time02>T</time02>
     <time03>HH:mm</time03>
@@ -2098,8 +2108,8 @@
     <StiSeriesSortTypeArgument>Argument</StiSeriesSortTypeArgument>
     <StiSeriesSortTypeNone>Žádný</StiSeriesSortTypeNone>
     <StiSeriesSortTypeValue>Hodnota</StiSeriesSortTypeValue>
-    <StiSeriesYAxisLeftYAxis>Levá Y osa</StiSeriesYAxisLeftYAxis>
-    <StiSeriesYAxisRightYAxis>Pravá Y osa</StiSeriesYAxisRightYAxis>
+    <StiSeriesYAxisLeftYAxis>Osa Y Levá</StiSeriesYAxisLeftYAxis>
+    <StiSeriesYAxisRightYAxis>Osa Y Pravá</StiSeriesYAxisRightYAxis>
     <StiShapeDirectionDown>Dolů</StiShapeDirectionDown>
     <StiShapeDirectionLeft>Vlevo</StiShapeDirectionLeft>
     <StiShapeDirectionRight>Vpravo</StiShapeDirectionRight>
@@ -2860,7 +2870,7 @@
     <ShowUpDown>Zobrazit nahoru dolů</ShowUpDown>
     <ShowValue>Zobrazit hodnotu</ShowValue>
     <ShowXAxis>Zobrazovat osu X</ShowXAxis>
-    <ShowYAxis>Zobrazit Y-ovou souřadnici</ShowYAxis>
+    <ShowYAxis>Zobrazovat osu Y</ShowYAxis>
     <ShowZeros>Zobrazuj nuly</ShowZeros>
     <ShrinkFontToFit>Přizpůsobit font</ShrinkFontToFit>
     <ShrinkFontToFitMinimumSize>Přizpůsobit font minimální velikosti</ShrinkFontToFitMinimumSize>
@@ -2994,9 +3004,9 @@
     <Wrap>Zalomit</Wrap>
     <WrapGap>Mezera zalomení</WrapGap>
     <XAxis>Osa X</XAxis>
-    <XTopAxis>Horní osa X</XTopAxis>
-    <YAxis>Osa Ys</YAxis>
-    <YRightAxis>Pravá osa Y</YRightAxis>
+    <XTopAxis>Osa X Horní</XTopAxis>
+    <YAxis>Osa Y</YAxis>
+    <YRightAxis>Osa Y Pravá</YRightAxis>
     <Zoom>Lupa</Zoom>
   </PropertyMain>
   <PropertySystemColors>

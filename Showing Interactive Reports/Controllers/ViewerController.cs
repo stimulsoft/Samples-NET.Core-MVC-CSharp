@@ -25,26 +25,26 @@ namespace Showing_Interactive_Reports.Controllers
             return View();
         }
 
-        public IActionResult GetReport(int? id)
+        public IActionResult GetReport(int id = 1)
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
 
             switch (id)
             {
                 // Dynamic sorting
                 case 1:
-                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/DrillDownSorting.mrt"));
+                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/Sorting.mrt"));
                     break;
 
                 // Drill down
                 case 2:
-                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/DrillDownListOfProducts.mrt"));
+                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/ListOfProducts.mrt"));
                     break;
 
                 // Collapsing
                 case 3:
-                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/DrillDownGroupWithCollapsing.mrt"));
+                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/GroupWithCollapsing.mrt"));
                     break;
 
                 // Bookmarks
@@ -56,17 +56,7 @@ namespace Showing_Interactive_Reports.Controllers
                 case 5:
                     report.Load(StiNetCoreHelper.MapPath(this, "Reports/InteractiveCharts.mrt"));
                     break;
-
-                default:
-                    report.Load(StiNetCoreHelper.MapPath(this, "Reports/DrillDownSorting.mrt"));
-                    break;
             }
-
-            // Load data from XML file for report template
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
-            report.Dictionary.Databases.Clear();
-            report.RegData(data);
 
             return StiNetCoreViewer.GetReportResult(this, report);
         }

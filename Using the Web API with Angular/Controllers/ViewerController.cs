@@ -68,12 +68,8 @@ namespace Using_the_Web_API_with_Angular.Controllers
 
         private IActionResult GetReportResult()
         {
-            var dataSet = new DataSet();
-            dataSet.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
-
             var report = new StiReport();
             report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
-            report.RegData(dataSet);
 
             return StiNetCoreViewer.GetReportResult(this, report);
         }

@@ -29,14 +29,8 @@ namespace Send_Report_by_Email.Controllers
         public IActionResult GetReport()
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
-
-            // Load data from XML file for report template
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
-
-            report.RegData(data);
             
             return StiNetCoreViewer.GetReportResult(this, report);
         }
@@ -48,7 +42,7 @@ namespace Send_Report_by_Email.Controllers
 
         public IActionResult EmailReport()
         {
-            StiEmailOptions options = StiNetCoreViewer.GetEmailOptions(this);
+            var options = StiNetCoreViewer.GetEmailOptions(this);
 
             options.AddressFrom = "admin@test.com";
             //options.AddressTo = "manager@test.com";

@@ -96,6 +96,12 @@
     <StiCrossGroupHeaderNotEqualToGroupCrossFooterOnContainerLong>CrossGroupFooterの数が '{0}'コンテナのCrossGroupHeaderの数に対応していません。奇数成分はレンダリングされません。</StiCrossGroupHeaderNotEqualToGroupCrossFooterOnContainerLong>
     <StiDataSourcesForImageCheckLong>'{0}'コンポーネントにいくつかのデータソースが設定されています。</StiDataSourcesForImageCheckLong>
     <StiDataSourcesForImageCheckShort>いくつかのデータソースが設定されています。</StiDataSourcesForImageCheckShort>
+    <StiEventsAtInterpretationCheckLong>'{1}'コンポーネントの '{0}'イベントのスクリプトは、解析モードでは機能しません。</StiEventsAtInterpretationCheckLong>
+    <StiEventsAtInterpretationCheckShort>解析イベント</StiEventsAtInterpretationCheckShort>
+    <StiFilterCircularDependencyElementCheckLong>フィルターの循環依存関係が、要素 '{0}'で見つかりました。 {0}要素の「親キー」プロパティを確認してください。</StiFilterCircularDependencyElementCheckLong>
+    <StiFilterCircularDependencyElementCheckShort>円形フィルターの依存関係</StiFilterCircularDependencyElementCheckShort>
+    <StiFilterValueCheckLong>'{0}'のフィルター値が指定されていません。 このフィルターは処理できません。</StiFilterValueCheckLong>
+    <StiFilterValueCheckShort>フィルター値が指定されていません</StiFilterValueCheckShort>
     <StiFontMissingCheckLong>コンポーネント '{1}'に指定されたフォント '{0}'が見つかりません。</StiFontMissingCheckLong>
     <StiFontMissingCheckShort>フォントが見つかりません。</StiFontMissingCheckShort>
     <StiFunctionsOnlyForEngineV2CheckLong>EngineV1で使用できないシステム変数がレポートで使用されます。 EngineV2を使用しますか？</StiFunctionsOnlyForEngineV2CheckLong>
@@ -203,6 +209,9 @@
     <RenderingMessage>レンダリングメッセージを報告する。 </RenderingMessage>
     <Warning>警告！ </Warning>
   </CheckGlobal>
+  <CheckLicense>
+    <StiLicenseTrialCheckLong>Stimulsoft Reports と Dashboardsの試用版を使用しています。 本番環境でソフトウェアを使用するには、ライセンスを購入する必要があります。</StiLicenseTrialCheckLong>
+  </CheckLicense>
   <CheckPage>
     <StiLostPointsOnPageCheckLong>'{0}'ページで失われたポイントが見つかりました：'{1}'点は不可視であり、以下のプリミティブで使用されます：垂直線、矩形、および丸みのある矩形。ポイントがどのコンポーネントにも一致しない場合は、そのポイントを削除することができます。</StiLostPointsOnPageCheckLong>
     <StiLostPointsOnPageCheckShort>失われたポイント</StiLostPointsOnPageCheckShort>
@@ -223,10 +232,16 @@
     <StiDuplicatedNameCheckShort>重複する名前のコンポーネントが見つかりました</StiDuplicatedNameCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>レポートに'{0}'リレーションがあります。彼らはNameInSourceの等しい（ '{1}'）値を持っています。 NameInSource内のすべての1つの関係から1つのデータベースの範囲で一意である必要があります。これらのリレーションフィールドを修正する必要があります。</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>リレーションで重複します。</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
+    <StiNetCoreCompilationModeCheckLong>Stimulsoft .NET Coreエンジンは、このレポートをコンパイルモードでレンダリングできません。 レポートを解釈モードに変更します。</StiNetCoreCompilationModeCheckLong>
+    <StiNetCoreCompilationModeCheckShort>このレポートはコンパイルモードです</StiNetCoreCompilationModeCheckShort>
   </CheckReport>
   <CheckVariable>
+    <StiVariableInitializationCheckLong>'{0}'変数のデフォルト値が間違っています。 指定された値で変数を初期化することはできません。</StiVariableInitializationCheckLong>
+    <StiVariableInitializationCheckShort>初期化値</StiVariableInitializationCheckShort>
     <StiVariableRecursionCheckLong>'{0}'変数には再帰を伴う式があります。 Variableを独自の式で参照することは不可能です。</StiVariableRecursionCheckLong>
     <StiVariableRecursionCheckShort>再帰式</StiVariableRecursionCheckShort>
+    <StiVariableTypeCheckLong>従属変数が正しく機能するためには、それらの型と列の型が一致する必要があります。</StiVariableTypeCheckLong>
+    <StiVariableTypeCheckShort>変数のタイプが一致しません。</StiVariableTypeCheckShort>
   </CheckVariable>
   <Font>
     <Bold>このFontが太字かどうかを示す値</Bold>
@@ -306,6 +321,7 @@
     <Use>Use </Use>
     <UseCompilationCache>コンパイルキャッシュを使用する</UseCompilationCache>
     <UseCompressedScripts>圧縮スクリプトを使用する</UseCompressedScripts>
+    <UseLatestVersion>ライブラリの最新バージョンを使用</UseLatestVersion>
     <UseWpfDesignerV2>Designer V2を使用する</UseWpfDesignerV2>
   </Publish>
   <ReportComparer>
@@ -428,6 +444,7 @@
     <GridLinesHor>左軸の水平グリッド線</GridLinesHor>
     <GridLinesHorRight>右軸の水平グリッド線</GridLinesHorRight>
     <GridLinesVert>垂直軸のグリッド線</GridLinesVert>
+    <InterlacingHor>水平軸のインターレース設定</InterlacingHor>
     <InterlacingVert>縦軸のインターレース設定</InterlacingVert>
     <RadarStyle>レーダー領域のスタイル</RadarStyle>
     <ReverseHor>水平軸のすべての値が逆であることを示す値</ReverseHor>
@@ -683,6 +700,21 @@
     <Title>チャートのタイトル設定</Title>
     <VertSpacing>グラフの境界線とグラフの間の垂直方向の間隔</VertSpacing>
   </StiChart>
+  <StiChartElement>
+    <Arguments>チャートの引数</Arguments>
+    <CloseValues>チャートの値を閉じます。</CloseValues>
+    <ColorEach />
+    <EndValues>チャートの終了値</EndValues>
+    <Group />
+    <HighValues>チャートの最高値</HighValues>
+    <LowValues>チャートの最低値</LowValues>
+    <Series>チャートシリーズ</Series>
+    <Style>チャートのスタイル</Style>
+    <TextFormat>テキスト形式</TextFormat>
+    <Title>チャートのタイトル</Title>
+    <Values>チャート値</Values>
+    <Weights>チャートの重み値</Weights>
+  </StiChartElement>
   <StiChartTable>
     <Font>グラフ表のフォント</Font>
     <GridLineColor>グリッド線の色</GridLineColor>
@@ -709,6 +741,7 @@
     <ContourColor>輪郭線の色</ContourColor>
     <ExcelValue>Excelにデータをエクスポートするために使用される式</ExcelValue>
     <GetCheckedEvent>状態がチェックされているときに発生</GetCheckedEvent>
+    <Size>輪郭のサイズ</Size>
     <Values>真偽値を記述する文字列</Values>
     <サイズ>輪郭サイズ</サイズ>
   </StiCheckBox>
@@ -959,6 +992,7 @@
     <RightToLeft>水平方向の列方向</RightToLeft>
   </StiDataBand>
   <StiDatabase>
+    <Alias>データベースのエイリアス</Alias>
     <ConnectedEvent>接続がアクティブになったときに発生</ConnectedEvent>
     <ConnectingEvent>接続がアクティブになっているときに発生</ConnectingEvent>
     <ConnectionString>SQL接続パラメータを含む接続文字列</ConnectionString>
@@ -1001,12 +1035,14 @@
     <ParentSource>親データソース</ParentSource>
   </StiDataRelation>
   <StiDataSource>
+    <Alias>データソースエイリアス</Alias>
     <AllowExpressions>データソースのsqlクエリにスクリプト式またはnoを含めることができることを示す値</AllowExpressions>
     <CodePage>コードページ</CodePage>
     <Columns>列コレクション</Columns>
     <CommandTimeout>コマンドの実行中に、試行をキャンセルしてエラーを生成するまで待機する秒数。デフォルトは30です。</CommandTimeout>
     <ConnectionOrder>データソースがデータにどの順序で接続するかを示す値</ConnectionOrder>
     <ConnectOnStart>データソースが自動的にデータに接続されていないことを示す値</ConnectOnStart>
+    <Name>レポートで使用されるデータソース名</Name>
     <NameInSource>データベース内のデータソースの名前</NameInSource>
     <Parameters>SQLクエリのパラメータコレクション</Parameters>
     <Path>データファイルへのパス</Path>
@@ -1030,6 +1066,19 @@
     <ValueBinding>値のデータバインディング</ValueBinding>
     <ValueChangedEvent>イベントValueChangedのスクリプト</ValueChangedEvent>
   </StiDateTimePickerControl>
+  <StiDialogStyle>
+    <GlyphColor>スタイルのグリフ色</GlyphColor>
+    <HotBackColor>スタイルのホット背景色</HotBackColor>
+    <HotForeColor>スタイルのホットアイテムの前景色</HotForeColor>
+    <HotGlyphColor>スタイルのホットアイテムの絵文字色</HotGlyphColor>
+    <HotSelectedBackColor>スタイルのホット選択アイテムの背景色</HotSelectedBackColor>
+    <HotSelectedForeColor>スタイルのホット選択アイテムの前景色</HotSelectedForeColor>
+    <HotSelectedGlyphColor>スタイルのホット選択アイテムの絵文字色</HotSelectedGlyphColor>
+    <SelectedBackColor>スタイルの選択されたアイテムの背景色</SelectedBackColor>
+    <SelectedForeColor>スタイルの選択されたアイテムの前景色</SelectedForeColor>
+    <SelectedGlyphColor>スタイルの選択されたアイテムのグリフ色</SelectedGlyphColor>
+    <SeparatorColor>スタイル描画時の色</SeparatorColor>
+  </StiDialogStyle>
   <StiDoughnutSeries>
     <Diameter>ドーナツシリーズの直径の固定サイズ</Diameter>
   </StiDoughnutSeries>
@@ -1044,7 +1093,6 @@
   <StiDynamicBand>
     <BreakIfLessThan>ページ上の空き領域の割合（パーセント単位）を、新しいページまたは新しい列の作成に予約する必要があることを示す値。値は0〜100の範囲で設定する必要があります。値が100の場合は、いずれの場合も新しいページまたは新しい列が作成されます。このプロパティは、NewPageBefore、NewPageAfter、NewColumnBefore、NewColumnAfterプロパティと共に使用されます。</BreakIfLessThan>
     <NewColumnAfter>このプロパティの値がtrueの場合、バンドの出力後に新しい列が生成されます。</NewColumnAfter>
-    <NewColumnBefore>ページの下部にフッターが印刷されていることを示す値</NewColumnBefore>
     <NewPageAfter>このプロパティの値がtrueの場合、バンドの出力後に新しいページが生成</NewPageAfter>
     <NewPageBefore>このプロパティの値がtrueの場合、バンドの出力前に新しいページが生成　次のページでバンドの出力を続けます。</NewPageBefore>
     <PrintAtBottom>フッターがページの下部に印刷されていることを示す値</PrintAtBottom>
@@ -1080,6 +1128,11 @@
     <SupplementCode>コンポーネント補足バーコードを取得または設定</SupplementCode>
     <SupplementType>補足コードのタイプを取得または設定</SupplementType>
   </StiEAN8BarCodeType>
+  <StiElement>
+    <BackColor>要素の背景色</BackColor>
+    <Margin>要素のマージン</Margin>
+    <Padding>要素のパディング</Padding>
+  </StiElement>
   <StiEmptyBand>
     <BeginRenderEvent>バンドがレンダー開始時に発生</BeginRenderEvent>
     <EndRenderEvent>バンドレンダリングが終了したときに発生</EndRenderEvent>
@@ -1348,6 +1401,12 @@
     <KeysBinding>キーのデータバインディング</KeysBinding>
     <SelectedKeyBinding>選択したキーのデータバインディング</SelectedKeyBinding>
   </StiLookUpBoxControl>
+  <StiMargin>
+    <Bottom>値は、要素の下端からマージンを設定します。</Bottom>
+    <Left>値は、要素の左端からマージンを設定します。</Left>
+    <Right>値は、要素の右端からマージンを設定します。</Right>
+    <Top>値は、要素の上端からマージンを設定します。</Top>
+  </StiMargin>
   <StiMarker>
     <Angle>マーカーの回転角度</Angle>
     <BorderColor>マーカーの境界線の色</BorderColor>
@@ -1377,6 +1436,12 @@
   <StiOutsidePieLabels>
     <LineLength>系列ラベルの境界と円の境界線の間の線の長さ</LineLength>
   </StiOutsidePieLabels>
+  <StiPadding>
+    <Bottom>この値は、下の境界線とそのコンテンツから要素内のパディングを設定します。</Bottom>
+    <Left>値は、左境界線とそのコンテンツから要素内のパディングを設定します。</Left>
+    <Right>値は、右境界線とそのコンテンツから要素内のパディングを設定します。</Right>
+    <Top>この値は、上部の境界線とそのコンテンツから要素内のパディングを設定します。</Top>
+  </StiPadding>
   <StiPage>
     <BeginRenderEvent>ページのレンダリングが開始されたときに発生</BeginRenderEvent>
     <ColumnBeginRenderEvent>列のレンダリングを開始するときに発生</ColumnBeginRenderEvent>
@@ -1508,6 +1573,7 @@
     <CacheAllData>1つのデータセットにレポートのすべてのデータをキャッシュする必要があるかどうかを示す値</CacheAllData>
     <CacheTotals>このプロパティには、Totalsプレフィックスとともに使用されるレポートの合計がキャッシュされます。このプロパティは、1つのバンドで同じ入力パラメータを持つ複数の合計を使用する場合にレポートのレンダリングを高速化します。</CacheTotals>
     <CalculationMode>レポート・レンダリングでの式計算の方法</CalculationMode>
+    <Collate>ページの照合に使用できる値。 プロパティの値は1未満にはできません。</Collate>
     <ConvertNulls>nullまたはDBNullを変換する必要があるかどうかを示す値</ConvertNulls>
     <EndRenderEvent>レポートのレンダリングが完了したときに発生</EndRenderEvent>
     <EngineVersion>現在のレポートエンジン</EngineVersion>
@@ -1709,6 +1775,12 @@
   <StiShapeTypeService>
     <Direction>矢印方向</Direction>
   </StiShapeTypeService>
+  <StiSimpleBorder>
+    <Color>境界線の色</Color>
+    <Side>フレームの境界線</Side>
+    <Size>境界線のサイズ</Size>
+    <Style>ボーダースタイル</Style>
+  </StiSimpleBorder>
   <StiSimpleText>
     <GetValueEvent>テキストがレンダリングの準備中であるときに発生</GetValueEvent>
     <GlobalizedName>グローバリゼーション・マネージャのキーとして使用される値</GlobalizedName>
@@ -1780,6 +1852,13 @@
     <HeaderRowsCount>表内のいくつかのヘッダー行</HeaderRowsCount>
     <RowCount>テーブル内のいくつかの行</RowCount>
   </StiTable>
+  <StiTableElement>
+    <Columns>テーブルに表示される列</Columns>
+    <Group />
+    <SizeMode />
+    <Style>テーブルスタイル。</Style>
+    <Title>テーブルのタイトル</Title>
+  </StiTableElement>
   <StiText>
     <AllowHtmlTags>このコンポーネントがテキスト内のHTMLタグを許可することを示す値</AllowHtmlTags>
     <Angle>テキスト回転の角度</Angle>
@@ -1827,6 +1906,14 @@
     <Trimming>ラインの終わりをトリミングするタイプ</Trimming>
     <WordWrap>ワードラップ</WordWrap>
   </StiTextOptions>
+  <StiTitle>
+    <BackColor>タイトルの背景色</BackColor>
+    <Font>タイトルのフォント</Font>
+    <ForeColor>タイトルの前景色</ForeColor>
+    <HorAlignment>テキストの水平方向の配置</HorAlignment>
+    <Text>タイトルのテキスト</Text>
+    <Visible>タイトルの可視性</Visible>
+  </StiTitle>
   <StiTreeViewControl>
     <AfterSelectEvent>AfterSelectプロパティが変更されたときに発生</AfterSelectEvent>
   </StiTreeViewControl>

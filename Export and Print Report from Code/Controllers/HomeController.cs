@@ -47,45 +47,40 @@ namespace Export_and_Print_Report_from_Code.Controllers
 
         private StiReport GetReport()
         {
-            string reportPath = StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt");
+            var reportPath = StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt");
             var report = new StiReport();
             report.Load(reportPath);
-
-            string dataPath = StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml");
-            var data = new DataSet("Demo");
-            data.ReadXml(dataPath);
-            report.RegData(data);
 
             return report;
         }
 
         public IActionResult PrintPdf()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiNetCoreReportResponse.PrintAsPdf(report);
         }
 
         public IActionResult PrintHtml()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiNetCoreReportResponse.PrintAsHtml(report);
         }
 
         public IActionResult ExportPdf()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiNetCoreReportResponse.ResponseAsPdf(report);
         }
 
         public IActionResult ExportHtml()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiNetCoreReportResponse.ResponseAsHtml(report);
         }
 
         public IActionResult ExportXls()
         {
-            StiReport report = this.GetReport();
+            var report = this.GetReport();
             return StiNetCoreReportResponse.ResponseAsXls(report);
         }
     }

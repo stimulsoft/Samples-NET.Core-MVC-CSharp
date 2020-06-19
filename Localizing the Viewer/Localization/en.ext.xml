@@ -4,7 +4,7 @@
     <ApplyEngineV2Long>Set the EngineVersion property of a page to EngineV2 to get access to all reporting tool features.</ApplyEngineV2Long>
     <Change>Change</Change>
     <ChangeReportToInterpretationMode>Change the report to the interpretation mode</ChangeReportToInterpretationMode>
-	<Code>Code</Code>
+    <Code>Code</Code>
     <Convert>Convert</Convert>
     <Delete>Delete</Delete>
     <Edit>Edit</Edit>
@@ -18,6 +18,8 @@
     <SetGrowToHeightToTrue>Set the GrowToHeight property to true</SetGrowToHeightToTrue>
     <StiAllowHtmlTagsInTextActionLong>Set the value of the AllowHtmlTags property of the component to true, for correct showing the HTML tags.</StiAllowHtmlTagsInTextActionLong>
     <StiAllowOnDoublePassActionLong>Set the NumberOfPass property to DoublePass for correct calculation of variables.</StiAllowOnDoublePassActionLong>
+    <StiApplyGeneralTextFormatLong>Set the 'General' format for the '{0}' component.</StiApplyGeneralTextFormatLong>
+    <StiApplyGeneralTextFormatShort>Apply General</StiApplyGeneralTextFormatShort>
     <StiCanBreakComponentInContainerActionLong>Set the value of the CanBreak property of the component to true.</StiCanBreakComponentInContainerActionLong>
     <StiCanGrowComponentInContainerActionLong>Set the value of the CanGrow property of the container to true.</StiCanGrowComponentInContainerActionLong>
     <StiCanGrowGrowToHeightComponentInContainerLong>The GrowToHeight property will be set to true for all components in container. This operation does not guarantee the 100% correct fix!</StiCanGrowGrowToHeightComponentInContainerLong>
@@ -56,9 +58,7 @@
     <StiVerySmallSizesOfComponentsLong>The size of a component will be increased to the GridSize value of a report. This operation does not guarantee the 100% correct fix!</StiVerySmallSizesOfComponentsLong>
     <StiVerySmallSizesOfComponentsShort>Increase size</StiVerySmallSizesOfComponentsShort>
     <StiWordWrapCanGrowTextDoesNotFitActionLong>Set the value of the CanGrow property of the component to true.</StiWordWrapCanGrowTextDoesNotFitActionLong>
-	  <Zero>Zero</Zero>
-    <StiApplyGeneralTextFormatShort>Apply General</StiApplyGeneralTextFormatShort>
-    <StiApplyGeneralTextFormatLong>Set the 'General' format for the '{0}' component.</StiApplyGeneralTextFormatLong>
+    <Zero>Zero</Zero>
   </CheckActions>
   <CheckComponent>
     <StiAllowHtmlTagsInTextCheckLong>HTML tags are used in the text. But the AllowHtmlTags property is set to false. The content of the {0} component will be printed incorrectly.</StiAllowHtmlTagsInTextCheckLong>
@@ -96,6 +96,14 @@
     <StiCrossGroupHeaderNotEqualToGroupCrossFooterOnContainerLong>The number of CrossGroupFooter does not correspond to the number of CrossGroupHeader in the '{0}' container. Odd components will not be rendered.</StiCrossGroupHeaderNotEqualToGroupCrossFooterOnContainerLong>
     <StiDataSourcesForImageCheckLong>Several data sources are set for the '{0}' component.</StiDataSourcesForImageCheckLong>
     <StiDataSourcesForImageCheckShort>Several data sources are set</StiDataSourcesForImageCheckShort>
+    <StiEventsAtInterpretationCheckLong>The script in the '{0}' event in the '{1}' component doesn't work in the interpretation mode.</StiEventsAtInterpretationCheckLong>
+    <StiEventsAtInterpretationCheckShort>Events in Interpretation</StiEventsAtInterpretationCheckShort>
+    <StiFilterCircularDependencyElementCheckLong>The circular dependency of the filter is found at the element '{0}'. Please check the 'Parent Key' property of the {0} 'element!</StiFilterCircularDependencyElementCheckLong>
+    <StiFilterCircularDependencyElementCheckShort>Circular filter dependency</StiFilterCircularDependencyElementCheckShort>
+    <StiExpressionElementCheckLong>The expression '{0}' in the '{1}' component works incorrectly. The following message was received from the parser: '{2}'.</StiExpressionElementCheckLong>
+    <StiExpressionElementCheckShort>An expression works incorrectly!</StiExpressionElementCheckShort>
+    <StiFilterValueCheckLong>A filter value of '{0}' is not specified. This filter can't be processed.</StiFilterValueCheckLong>
+    <StiFilterValueCheckShort>A filter Value is not specified</StiFilterValueCheckShort>
     <StiFontMissingCheckLong>The font '{0}' specified for the component '{1}' is not found.</StiFontMissingCheckLong>
     <StiFontMissingCheckShort>The font is not found.</StiFontMissingCheckShort>
     <StiFunctionsOnlyForEngineV2CheckLong>System variables which are not available in the EngineV1 are used in the report. Do you want to use EngineV2.</StiFunctionsOnlyForEngineV2CheckLong>
@@ -149,6 +157,8 @@
     <StiSystemTextObsoleteCheckShort>The component is obsolete</StiSystemTextObsoleteCheckShort>
     <StiTextColorEqualToBackColorCheckLong>Possible reason is that the values of the TextBrush and Brush properties of the '{0}' component were set incorrectly. The text will not be visible.</StiTextColorEqualToBackColorCheckLong>
     <StiTextColorEqualToBackColorCheckShort>The TextBrush property is equal to the Brush property</StiTextColorEqualToBackColorCheckShort>
+    <StiTextTextFormatCheckLong>The selected format for the '{0}' component is not specified.</StiTextTextFormatCheckLong>
+    <StiTextTextFormatCheckShort>The format is not specified.</StiTextTextFormatCheckShort>
     <StiTotalPageCountDoublePassCheckLong>The TotalPageCount, TotalPageCountThrough system variables in scripts and conditions provide incorrect results when one pass. It is required to set the NumberOfPass property to DoublePass.</StiTotalPageCountDoublePassCheckLong>
     <StiUndefinedComponentCheckLong>Undefined '{0}' component is found in the report. The reporting tool cannot identify this component. Maybe this is a custom component. The report cannot be rendered!</StiUndefinedComponentCheckLong>
     <StiUndefinedComponentCheckShort>Undefined component</StiUndefinedComponentCheckShort>
@@ -162,8 +172,6 @@
     <StiWidthHeightZeroComponentCheckShortWidthHeight>The height and width of the '{0}' component are equal to 0</StiWidthHeightZeroComponentCheckShortWidthHeight>
     <StiWordWrapCanGrowTextDoesNotFitLong>If the WordWrap property is set to true, and the CanGrow property is set to false, then the text of the {0} component cannot be shown completely. It is recommended to set the CanGrow property to true.</StiWordWrapCanGrowTextDoesNotFitLong>
     <StiWordWrapCanGrowTextDoesNotFitShort>The text may not fit</StiWordWrapCanGrowTextDoesNotFitShort>
-    <StiTextTextFormatCheckShort>The format is not specified.</StiTextTextFormatCheckShort>
-    <StiTextTextFormatCheckLong>The selected format for the '{0}' component is not specified.</StiTextTextFormatCheckLong>
   </CheckComponent>
   <CheckConnection>
     <StiUndefinedConnectionCheckLong>Undefined '{0}' connection is found. The reporting tool cannot correctly process such type of connection with the database! May be the customer types of connections are used in the report. This report cannot be rendered!</StiUndefinedConnectionCheckLong>
@@ -188,14 +196,14 @@
     <StiSourcesInAbsentDataRelationCheckShort>There are no Data Sources</StiSourcesInAbsentDataRelationCheckShort>
   </CheckDataRelation>
   <CheckDataSource>
+    <StiCalculatedColumnRecursionCheckLong>The '{0}' calculated column of the '{1}' datasource has a expression with recursion. It's impossible to refer to the Calculated Column in its own expression.</StiCalculatedColumnRecursionCheckLong>
+    <StiCalculatedColumnRecursionCheckShort>Recursive Expression</StiCalculatedColumnRecursionCheckShort>
     <StiNoNameDataSourceCheckLong>The datasource name is not specified. This name is used for creating a class in the report code of the data source. Without indicating the name, the reporting tool cannot create the report code and the report will not be compiled!</StiNoNameDataSourceCheckLong>
     <StiNoNameDataSourceCheckShort>There is no name for the Data Source</StiNoNameDataSourceCheckShort>
     <StiNoNameInSourceDataSourceCheckLong>NameInSource field is not filled for the '{0}' data sources. Without filling this field, the reporting tool will not be able to find the data for the data source in the database and the report will not be rendered!</StiNoNameInSourceDataSourceCheckLong>
     <StiNoNameInSourceDataSourceCheckShort>NameInSource of the data source field is not filled</StiNoNameInSourceDataSourceCheckShort>
     <StiUndefinedDataSourceCheckLong>The undefined '{0}' data source is found in the report. The reporting tool cannot correctly process such type of the data source! Maybe custom data sources are used in the report. This report cannot be rendered!</StiUndefinedDataSourceCheckLong>
     <StiUndefinedDataSourceCheckShort>Undefined Data Source</StiUndefinedDataSourceCheckShort>
-    <StiCalculatedColumnRecursionCheckLong>The '{0}' calculated column of the '{1}' datasource has a expression with recursion. It's impossible to refer to the Calculated Column in its own expression.</StiCalculatedColumnRecursionCheckLong>
-    <StiCalculatedColumnRecursionCheckShort>Recursive Expression</StiCalculatedColumnRecursionCheckShort>
   </CheckDataSource>
   <CheckGlobal>
     <Error>Error! </Error>
@@ -203,6 +211,9 @@
     <RenderingMessage>Report Rendering Message. </RenderingMessage>
     <Warning>Warning! </Warning>
   </CheckGlobal>
+  <CheckLicense>
+    <StiLicenseTrialCheckLong>You are using the trial version of Stimulsoft Reports and Dashboards. To use the software in production you should purchase a license.</StiLicenseTrialCheckLong>
+  </CheckLicense>
   <CheckPage>
     <StiLostPointsOnPageCheckLong>Lost points are found on the '{0}' page: {1}. Points are invisible and used in the following primitives: vertical line, rectangle and rounded rectangle. If the point does not match to any components then it can be deleted.</StiLostPointsOnPageCheckLong>
     <StiLostPointsOnPageCheckShort>Lost points</StiLostPointsOnPageCheckShort>
@@ -211,6 +222,8 @@
     <StiOrientationPageCheckShort>Incorrect '{0}' page orientation.</StiOrientationPageCheckShort>
   </CheckPage>
   <CheckReport>
+    <StiCloudCompilationModeCheckLong>Stimulsoft Cloud cannot preview this report in the compilation mode. Change the report to the interpretation mode.</StiCloudCompilationModeCheckLong>
+    <StiCloudCompilationModeCheckShort>This report is in the compilation mode</StiCloudCompilationModeCheckShort>
     <StiCompilationErrorAssemblyCheckLong>Could not load file or assembly '{0}' or one of its dependencies.</StiCompilationErrorAssemblyCheckLong>
     <StiCompilationErrorCheck2Long>The error of compilation is found in the '{1}' property of the '{2}' component:</StiCompilationErrorCheck2Long>
     <StiCompilationErrorCheck3Long>The error of compilation is found in the '{1}' event of the '{2}' component:</StiCompilationErrorCheck3Long>
@@ -221,16 +234,16 @@
     <StiDuplicatedNameCheckShort>The components with duplicate names are found</StiDuplicatedNameCheckShort>
     <StiDuplicatedNameInSourceInDataRelationReportCheckLong>The '{0}' relations are found in the report. They have equal ('{1}') values in the NameInSource. All values in the NameInSource should be unique in the range of one relation to one database! It is necessary to correct these fields of relations.</StiDuplicatedNameInSourceInDataRelationReportCheckLong>
     <StiDuplicatedNameInSourceInDataRelationReportCheckShort>Duplicates in relations</StiDuplicatedNameInSourceInDataRelationReportCheckShort>
-	<StiCloudCompilationModeCheckShort>This report is in the compilation mode</StiCloudCompilationModeCheckShort>
-	<StiCloudCompilationModeCheckLong>Stimulsoft Cloud cannot preview this report in the compilation mode. Change the report to the interpretation mode.</StiCloudCompilationModeCheckLong>
+    <StiNetCoreCompilationModeCheckLong>Stimulsoft .NET Core engine cannot render this report in the compilation mode. Change the report to the interpretation mode.</StiNetCoreCompilationModeCheckLong>
+    <StiNetCoreCompilationModeCheckShort>This report is in the compilation mode</StiNetCoreCompilationModeCheckShort>
   </CheckReport>
   <CheckVariable>
-    <StiVariableRecursionCheckLong>The '{0}' variable has a expression with recursion. It's impossible to refer to the Variable in its own expression.</StiVariableRecursionCheckLong>
-    <StiVariableRecursionCheckShort>Recursive Expression</StiVariableRecursionCheckShort>
-    <StiVariableTypeCheckShort>Variable types do not match.</StiVariableTypeCheckShort>
-    <StiVariableTypeCheckLong>For the dependent variables to work correctly, their types and the types of their columns must match.</StiVariableTypeCheckLong>
     <StiVariableInitializationCheckLong>The '{0}' variable has the wrong default value. It is impossible to initialize the variable with a specified value.</StiVariableInitializationCheckLong>
     <StiVariableInitializationCheckShort>Initialization value</StiVariableInitializationCheckShort>
+    <StiVariableRecursionCheckLong>The '{0}' variable has a expression with recursion. It's impossible to refer to the Variable in its own expression.</StiVariableRecursionCheckLong>
+    <StiVariableRecursionCheckShort>Recursive Expression</StiVariableRecursionCheckShort>
+    <StiVariableTypeCheckLong>For the dependent variables to work correctly, their types and the types of their columns must match.</StiVariableTypeCheckLong>
+    <StiVariableTypeCheckShort>Variable types do not match.</StiVariableTypeCheckShort>
   </CheckVariable>
   <Font>
     <Bold>A value that indicates whether this Font is bold.</Bold>
@@ -240,6 +253,80 @@
     <Strikeout>A value that indicates whether this Font specifies a horizontal line through the font.</Strikeout>
     <Underline>A value that indicates whether this Font is underlined.</Underline>
   </Font>
+  <Publish>
+    <ActionDesign>Design</ActionDesign>
+    <ActionExport>Export</ActionExport>
+    <ActionShow>Show</ActionShow>
+    <AddNewConnection>Add New Connection</AddNewConnection>
+    <Cancel>Cancel</Cancel>
+    <Close>Close</Close>
+    <ConnectionsFromReport>Use Connection from Report</ConnectionsFromReport>
+    <ConnectionsRegData>Register Data from Code</ConnectionsRegData>
+    <ConnectionsReplace>Replace Connection String</ConnectionsReplace>
+    <Copy>Copy</Copy>
+    <CopyingLibraries>Copying project files...</CopyingLibraries>
+    <DeployReportPlatform>Deploy Report to Platform:</DeployReportPlatform>
+    <DownloadingLibraries>Downloading libraries...</DownloadingLibraries>
+    <EmbedAllDataToResources>The report contains data connections that are not supported in the selected platform. Do you want to embed available data in the report as resources? In this case, all connections will be replaced with XML resources.</EmbedAllDataToResources>
+    <ExportFormat>Export Report to:</ExportFormat>
+    <ExportFormatData>Data</ExportFormatData>
+    <ExportFormatDataType>Data Type:</ExportFormatDataType>
+    <ExportFormatImage>Image</ExportFormatImage>
+    <ExportFormatImageType>Image Type:</ExportFormatImageType>
+    <FullScreenViewer>Display the Viewer in Full Browser Window</FullScreenViewer>
+    <GetLibrariesFrom>Get Stimulsoft Libraries from {0}</GetLibrariesFrom>
+    <GroupAddons>Addons</GroupAddons>
+    <GroupConnections>Data Connections</GroupConnections>
+    <GroupParameters>Report Parameters</GroupParameters>
+    <HideOptions>Hide Options</HideOptions>
+    <IncludeFonts>Include Fonts</IncludeFonts>
+    <IncludeLibrariesToStandalone>Include Stimulsoft Libraries to the Executable File</IncludeLibrariesToStandalone>
+    <IncludeLicenseKey>Include License Key</IncludeLicenseKey>
+    <IncludeLocalization>Include Localization</IncludeLocalization>
+    <IncludeReportPackedStringToCode>Include Report as Packed String to Code</IncludeReportPackedStringToCode>
+    <IncludeUITheme>Include UI Theme</IncludeUITheme>
+    <JavaScriptFramework>Framework Type:</JavaScriptFramework>
+    <LicenseKeyTypeFile>File</LicenseKeyTypeFile>
+    <LicenseKeyTypeString>String</LicenseKeyTypeString>
+    <LoadReport>Load Report from:</LoadReport>
+    <LoadReportAssembly>Assembly</LoadReportAssembly>
+    <LoadReportByteArray>Byte Array</LoadReportByteArray>
+    <LoadReportClass>Class</LoadReportClass>
+    <LoadReportFile>File</LoadReportFile>
+    <LoadReportHyperlink>Hyperlink</LoadReportHyperlink>
+    <LoadReportResource>Resource</LoadReportResource>
+    <LoadReportStream>Stream</LoadReportStream>
+    <LoadReportString>String</LoadReportString>
+    <ParametersFromReport>Use Value from Report</ParametersFromReport>
+    <ParametersReplace>Replace Value from {0}Code</ParametersReplace>
+    <ParametersReplacePhpInfo>The parameter will be removed from the report dictionary and can be used only in the SQL query.</ParametersReplacePhpInfo>
+    <ParametersRequestFromUser>Request from User</ParametersRequestFromUser>
+    <Publish>Publish</Publish>
+    <PublishType>Report Publish Type:</PublishType>
+    <PublishTypeProject>Project</PublishTypeProject>
+    <PublishTypeStandalone>Standalone</PublishTypeStandalone>
+    <ReadMore>Read More</ReadMore>
+    <RegDataOnlyForPreview>Use Only for Report Preview</RegDataOnlyForPreview>
+    <RegDataSynchronize>Synchronize Report Dictionary</RegDataSynchronize>
+    <ReplaceConnectionString>Replace Connection String</ReplaceConnectionString>
+    <ReplacePathToData>Replace Path to the Data</ReplacePathToData>
+    <ReportAction>What to do with Report:</ReportAction>
+    <ReportErrors>Unfortunately, due to errors, this report cannot be published!</ReportErrors>
+    <SaveProjectPackage>Save Project Package</SaveProjectPackage>
+    <SaveStandalone>Save Standalone</SaveStandalone>
+    <SaveStandalonePackage>Save Standalone Package</SaveStandalonePackage>
+    <SearchLibraries>Search for libraries...</SearchLibraries>
+    <ShowMore>Show More</ShowMore>
+    <ShowOptions>Show Options</ShowOptions>
+    <ThemeBackground>Background:</ThemeBackground>
+    <ThemeStyle>Theme Style:</ThemeStyle>
+    <TrialVersion>Trial Version</TrialVersion>
+    <Use>Use</Use>
+    <UseCompilationCache>Use Compilation Cache</UseCompilationCache>
+    <UseCompressedScripts>Use Compressed Scripts</UseCompressedScripts>
+    <UseLatestVersion>Use the latest version of libraries</UseLatestVersion>
+    <UseWpfDesignerV2>Use the Designer V2</UseWpfDesignerV2>
+  </Publish>
   <ReportComparer>
     <Change>Change</Change>
     <Copy>Copy</Copy>
@@ -383,8 +470,8 @@
     <Module>Gets or sets width of the most fine element of the bar code.</Module>
   </StiAustraliaPost4StateBarCodeType>
   <StiAxis>
-    <Interaction>Interaction options of this component.</Interaction>
     <ArrowStyle>Style of axis arrow.</ArrowStyle>
+    <Interaction>Interaction options of this component.</Interaction>
     <Labels>Axis labels settings.</Labels>
     <LineColor>Line color which used to draw axis.</LineColor>
     <LineStyle>Line style of axis.</LineStyle>
@@ -514,7 +601,7 @@
     <AllowUseTextOptions>A value which indicates whether a report engine can use TextOptions formatting or not.</AllowUseTextOptions>
     <AllowUseVertAlignment>A value which indicates whether a report engine can use VertAlignment formatting or not.</AllowUseVertAlignment>
     <AxisLabelsColor>A color of labels drawing.</AxisLabelsColor>
-    <AxisLineColor>Line color which used to draw axis.</AxisLineColor>
+    <AxisLineColor>A line color which used to draw axis.</AxisLineColor>
     <AxisTitleColor>A color which will be used for title drawing.</AxisTitleColor>
     <BackColor>A background color for drawing this style.</BackColor>
     <BasicStyleColor>A base color for drawing this style.</BasicStyleColor>
@@ -529,8 +616,8 @@
     <Description>A style description.</Description>
     <Font>A font for drawing this style.</Font>
     <ForeColor>A foreground color for drawing this style.</ForeColor>
-    <GridLinesHorColor>Color which will be used for drawing horizontal grid lines.</GridLinesHorColor>
-    <GridLinesVertColor>Color which will be used for drawing vertical grid lines.</GridLinesVertColor>
+    <GridLinesHorColor>A color which will be used for drawing horizontal grid lines.</GridLinesHorColor>
+    <GridLinesVertColor>A color which will be used for drawing vertical grid lines.</GridLinesVertColor>
     <HorAlignment>A horizontal alignment of the style.</HorAlignment>
     <Image>An image to fill the Image property of the Image component.</Image>
     <InterlacingHorBrush>A brush that is used for drawing horizontal interlacing bar.</InterlacingHorBrush>
@@ -538,7 +625,7 @@
     <LegendBorderColor>A border color.</LegendBorderColor>
     <LegendBrush>A background brush of legend.</LegendBrush>
     <LegendLabelsColor>A color of the labels.</LegendLabelsColor>
-    <LegendTitleColor>Title color of legend.</LegendTitleColor>
+    <LegendTitleColor>A title color of legend.</LegendTitleColor>
     <Name>A style name.</Name>
     <SeriesLabelsBorderColor>A border color of series labels.</SeriesLabelsBorderColor>
     <SeriesLabelsBrush>A brush that will be used to fill area of series labels.</SeriesLabelsBrush>
@@ -614,60 +701,22 @@
     <Table>Chart table settings.</Table>
     <Title>Chart title settings.</Title>
     <VertSpacing>Vertical space between border of the chart and the chart.</VertSpacing>
-  </StiChart>  
+  </StiChart>
   <StiChartElement>
     <Arguments>Chart arguments.</Arguments>
-    <Values>Chart values.</Values>
-    <EndValues>End values of a chart.</EndValues>
     <CloseValues>Close values of a chart.</CloseValues>
-    <LowValues>Low values of a chart.</LowValues>
+    <ColorEach />
+    <EndValues>End values of a chart.</EndValues>
+    <Group />
     <HighValues>High values of a chart.</HighValues>
-    <Weights>Weight values of a chart.</Weights>
+    <LowValues>Low values of a chart.</LowValues>
     <Series>Chart series.</Series>
-    <ColorEach></ColorEach>
-    <Group></Group>
     <Style>A style of a chart.</Style>
     <TextFormat>The text format.</TextFormat>
     <Title>Chart title.</Title>
+    <Values>Chart values.</Values>
+    <Weights>Weight values of a chart.</Weights>
   </StiChartElement>
-  <StiTableElement>
-    <Columns>Columns displayed in the table</Columns>
-    <SizeMode></SizeMode>
-    <Group></Group>
-    <Title>Table title.</Title>
-    <Style>Table style.</Style>
-  </StiTableElement>
-  <StiTitle>
-    <BackColor>Background color for a title.</BackColor>
-    <ForeColor>Fore color for a title.</ForeColor>
-    <Text>Text of a title.</Text>
-    <Font>Font of a title.</Font>
-    <HorAlignment>Horizontal alignment of text.</HorAlignment>
-    <Visible>Title visibility.</Visible>
-  </StiTitle>
-  <StiElement>
-    <BackColor>A back color for the element.</BackColor>
-    <Margin>Element margin.</Margin>
-    <Padding>Element margin.</Padding>
-  </StiElement>
-  <StiSimpleBorder>
-    <Color>A border color.</Color>
-    <Side>Frame borders.</Side>
-    <Size>A border size.</Size>
-    <Style>A border style.</Style>
-  </StiSimpleBorder>
-  <StiMargin>
-    <Left>The value sets a margin from the left edge of the element.</Left>
-    <Right>The value sets a margin from the right edge of the element.</Right>
-    <Top>The value sets a margin from the top edge of the element.</Top>
-    <Bottom>The value sets a margin from the bottom edge of the element.</Bottom>
-  </StiMargin>
-  <StiPadding>
-    <Left>The value sets the padding inside the element from the left border and its contents.</Left>
-    <Right>The value sets the padding inside the element from the right border and its contents.</Right>
-    <Top>The value sets the padding inside the element from the top border and its contents.</Top>
-    <Bottom>The value sets the padding inside the element from the bottom border and its contents.</Bottom>
-  </StiPadding>
   <StiChartTable>
     <Font>Font of the chart table.</Font>
     <GridLineColor>A color of the grid lines.</GridLineColor>
@@ -795,9 +844,9 @@
     <TextBinding>Data bindings for the text.</TextBinding>
   </StiComboBoxControl>
   <StiComponent>
-    <Anchor>Gets or sets a value which indicates the mode of linking component location to the parent component size..</Anchor>
     <AfterPrintEvent>Occurs after the component printing.</AfterPrintEvent>
     <Alias>A text that will be shown instead of a component name. If the text is not indicated then the name is shown.</Alias>
+    <Anchor>Gets or sets a value which indicates the mode of linking component location to the parent component size..</Anchor>
     <BeforePrintEvent>Occurs before printing the component.</BeforePrintEvent>
     <Bookmark>An expression to fill the component Bookmark.</Bookmark>
     <Border>A frame of the component.</Border>
@@ -880,8 +929,8 @@
     <GetCrossValueEvent>A script of the event GetValueEvent.</GetCrossValueEvent>
     <GetDisplayCrossValueEvent>A script of the event GetDisplayCrossValueEvent.</GetDisplayCrossValueEvent>
     <HideZeros>A value indicates that no need show zeroes.</HideZeros>
-    <MergeHeaders>A value indicates that all equal values of header will be merged into one.</MergeHeaders>
     <KeepMergedCellsTogether>A value indicates that merged cells will not separate to next page.</KeepMergedCellsTogether>
+    <MergeHeaders>A value indicates that all equal values of header will be merged into one.</MergeHeaders>
     <PrintOnAllPages>A value indicates that the component is printed on all pages.</PrintOnAllPages>
     <ShowPercents>A value indicates that value in cell must be shown as percents.</ShowPercents>
     <ShowTotal>A value that indicates whether it is necessary to output totals or not.</ShowTotal>
@@ -1015,6 +1064,19 @@
     <ValueBinding>Data bindings for the value.</ValueBinding>
     <ValueChangedEvent>A script of the event ValueChanged.</ValueChangedEvent>
   </StiDateTimePickerControl>
+  <StiDialogStyle>
+    <GlyphColor>A glyph color of the style.</GlyphColor>
+    <HotBackColor>A background color of a hot of the style.</HotBackColor>
+    <HotForeColor>A foreground color of a hot item of the style.</HotForeColor>
+    <HotGlyphColor>A glyph color of a hot item of the style.</HotGlyphColor>
+    <HotSelectedBackColor>A background color of a hot selected item of the style.</HotSelectedBackColor>
+    <HotSelectedForeColor>A foreground color of a hot selected item of the style.</HotSelectedForeColor>
+    <HotSelectedGlyphColor>A glyph color of a hot selected item of the style.</HotSelectedGlyphColor>
+    <SelectedBackColor>A background color of a selected item of the style.</SelectedBackColor>
+    <SelectedForeColor>A foreground color of a selected item of the style.</SelectedForeColor>
+    <SelectedGlyphColor>A glyph color of a selected item of the style.</SelectedGlyphColor>
+    <SeparatorColor>A color for drawing of the style.</SeparatorColor>
+  </StiDialogStyle>
   <StiDoughnutSeries>
     <Diameter>Fixed size of diameter of doughnut series.</Diameter>
   </StiDoughnutSeries>
@@ -1029,7 +1091,7 @@
   <StiDynamicBand>
     <BreakIfLessThan>A value that indicates how much free space is on a page (in per cent) should be reserved for formation of a new page or a new column. The value should be set in the range from 0 to 100. If the value is 100 then, in any case, a new page or a new column will be formed. This property is used together with NewPageBefore, NewPageAfter, NewColumnBefore, NewColumnAfter properties.</BreakIfLessThan>
     <NewColumnAfter>If the value of this property is true, then, after output of a band, a new column will be generated.</NewColumnAfter>
-    <NewColumnBefore>A value indicates that the footer is printed at bottom of page.</NewColumnBefore>
+    <NewColumnBefore>If the value of this property is true, then, before output of a band, a new column will be generated.</NewColumnBefore>
     <NewPageAfter>If the value of this property is true, then, after output of a band, a new page will be generated.</NewPageAfter>
     <NewPageBefore>If the value of this property is true, then, before output of a band, a new page will be generated. Output of a band will be continued on the next page.</NewPageBefore>
     <PrintAtBottom>A value indicates that the footer is printed at bottom of page.</PrintAtBottom>
@@ -1065,6 +1127,11 @@
     <SupplementCode>Gets or sets the component supplement bar code.</SupplementCode>
     <SupplementType>Gets or sets type of supplement code.</SupplementType>
   </StiEAN8BarCodeType>
+  <StiElement>
+    <BackColor>A back color for the element.</BackColor>
+    <Margin>Element margin.</Margin>
+    <Padding>Element margin.</Padding>
+  </StiElement>
   <StiEmptyBand>
     <BeginRenderEvent>Occurs when band begin render.</BeginRenderEvent>
     <EndRenderEvent>Occurs when band rendering is finished.</EndRenderEvent>
@@ -1109,6 +1176,13 @@
     <ValueDataColumnEnd>A name of the column that contains the end value.</ValueDataColumnEnd>
     <ValueEnd>The end value expression. Example: {Order.Value}</ValueEnd>
   </StiGanttSeries>
+  <StiGaugeElement>
+    <Font>Font.</Font>
+    <ForeColor>Fore color.</ForeColor>
+    <Series>Gauge Series.</Series>
+    <Style>Gauge Style.</Style>
+    <Title>Gauge Title.</Title>
+  </StiGaugeElement>
   <StiGlareBrush>
     <Angle>The angle, measured in degrees clockwise from the x-axis, of the gradient's orientation line.</Angle>
     <EndColor>The end color for the gradient.</EndColor>
@@ -1333,6 +1407,12 @@
     <KeysBinding>Data bindings for the keys.</KeysBinding>
     <SelectedKeyBinding>Data bindings for the selected key.</SelectedKeyBinding>
   </StiLookUpBoxControl>
+  <StiMargin>
+    <Bottom>The value sets a margin from the bottom edge of the element.</Bottom>
+    <Left>The value sets a margin from the left edge of the element.</Left>
+    <Right>The value sets a margin from the right edge of the element.</Right>
+    <Top>The value sets a margin from the top edge of the element.</Top>
+  </StiMargin>
   <StiMarker>
     <Angle>A rotation angle of the marker.</Angle>
     <BorderColor>A border color of marker.</BorderColor>
@@ -1362,6 +1442,12 @@
   <StiOutsidePieLabels>
     <LineLength>A line length between border of series labels and border of pie series.</LineLength>
   </StiOutsidePieLabels>
+  <StiPadding>
+    <Bottom>The value sets the padding inside the element from the bottom border and its contents.</Bottom>
+    <Left>The value sets the padding inside the element from the left border and its contents.</Left>
+    <Right>The value sets the padding inside the element from the right border and its contents.</Right>
+    <Top>The value sets the padding inside the element from the top border and its contents.</Top>
+  </StiPadding>
   <StiPage>
     <BeginRenderEvent>Occurs when when a page begins to render.</BeginRenderEvent>
     <ColumnBeginRenderEvent>Occurs when begin rendering a column.</ColumnBeginRenderEvent>
@@ -1695,6 +1781,12 @@
   <StiShapeTypeService>
     <Direction>The arrow direction.</Direction>
   </StiShapeTypeService>
+  <StiSimpleBorder>
+    <Color>A border color.</Color>
+    <Side>Frame borders.</Side>
+    <Size>A border size.</Size>
+    <Style>A border style.</Style>
+  </StiSimpleBorder>
   <StiSimpleText>
     <GetValueEvent>Occurs when the text is being prepared for rendering.</GetValueEvent>
     <GlobalizedName>A value that is used as a key for the Globalization Manager.</GlobalizedName>
@@ -1766,6 +1858,13 @@
     <HeaderRowsCount>A number of header rows in the table.</HeaderRowsCount>
     <RowCount>A number of rows in the table.</RowCount>
   </StiTable>
+  <StiTableElement>
+    <Columns>Columns displayed in the table</Columns>
+    <Group />
+    <SizeMode />
+    <Style>Table style.</Style>
+    <Title>Table title.</Title>
+  </StiTableElement>
   <StiText>
     <AllowHtmlTags>A value indicates that this component allows HTML tags in a text.</AllowHtmlTags>
     <Angle>An angle of a text rotation.</Angle>
@@ -1813,6 +1912,14 @@
     <Trimming>A type to trim the end of a line.</Trimming>
     <WordWrap>Word wrap.</WordWrap>
   </StiTextOptions>
+  <StiTitle>
+    <BackColor>Background color for a title.</BackColor>
+    <Font>Font of a title.</Font>
+    <ForeColor>Fore color for a title.</ForeColor>
+    <HorAlignment>Horizontal alignment of text.</HorAlignment>
+    <Text>Text of a title.</Text>
+    <Visible>Title visibility.</Visible>
+  </StiTitle>
   <StiTreeViewControl>
     <AfterSelectEvent>Occurs when the AfterSelect property has changed.</AfterSelectEvent>
   </StiTreeViewControl>
@@ -1896,76 +2003,4 @@
     <Key>A Key which will be used in variables when user select associated with it Value in GUI.</Key>
     <Value>A Value which will be displayed instead of the Key value in GUI.</Value>
   </Universal>
-  <Publish>
-    <Publish>Publish</Publish>
-    <DeployReportPlatform>Deploy Report to Platform:</DeployReportPlatform>
-    <PublishType>Report Publish Type:</PublishType>
-    <PublishTypeProject>Project</PublishTypeProject>
-    <PublishTypeStandalone>Standalone</PublishTypeStandalone>
-    <IncludeLibrariesToStandalone>Include Stimulsoft Libraries to the Executable File</IncludeLibrariesToStandalone>
-    <GetLibrariesFrom>Get Stimulsoft Libraries from {0}</GetLibrariesFrom>
-    <JavaScriptFramework>Framework Type:</JavaScriptFramework>
-    <LoadReport>Load Report from:</LoadReport>
-    <LoadReportFile>File</LoadReportFile>
-    <LoadReportString>String</LoadReportString>
-    <LoadReportHyperlink>Hyperlink</LoadReportHyperlink>
-    <LoadReportStream>Stream</LoadReportStream>
-    <LoadReportByteArray>Byte Array</LoadReportByteArray>
-    <LoadReportResource>Resource</LoadReportResource>
-    <LoadReportClass>Class</LoadReportClass>
-    <LoadReportAssembly>Assembly</LoadReportAssembly>
-    <UseCompilationCache>Use Compilation Cache</UseCompilationCache>
-    <IncludeReportPackedStringToCode>Include Report as Packed String to Code</IncludeReportPackedStringToCode>
-    <ReportAction>What to do with Report:</ReportAction>
-    <ActionShow>Show</ActionShow>
-    <ActionExport>Export</ActionExport>
-    <ActionDesign>Design</ActionDesign>
-    <FullScreenViewer>Display the Viewer in Full Browser Window</FullScreenViewer>
-    <UseWpfDesignerV2>Use the Designer V2</UseWpfDesignerV2>
-    <ExportFormat>Export Report to:</ExportFormat>
-    <ExportFormatData>Data</ExportFormatData>
-    <ExportFormatImage>Image</ExportFormatImage>
-    <ExportFormatDataType>Data Type:</ExportFormatDataType>
-    <ExportFormatImageType>Image Type:</ExportFormatImageType>
-    <ConnectionsFromReport>Use Connection from Report</ConnectionsFromReport>
-    <ConnectionsReplace>Replace Connection String</ConnectionsReplace>
-    <ConnectionsRegData>Register Data from Code</ConnectionsRegData>
-    <RegDataSynchronize>Synchronize Report Dictionary</RegDataSynchronize>
-    <RegDataOnlyForPreview>Use Only for Report Preview</RegDataOnlyForPreview>
-    <ParametersFromReport>Use Value from Report</ParametersFromReport>
-    <ParametersReplace>Replace Value from {0}Code</ParametersReplace>
-    <ParametersRequestFromUser>Request from User</ParametersRequestFromUser>
-    <ParametersReplacePhpInfo>The parameter will be removed from the report dictionary and can be used only in the SQL query.</ParametersReplacePhpInfo>
-    <IncludeLicenseKey>Include License Key</IncludeLicenseKey>
-    <LicenseKeyTypeString>String</LicenseKeyTypeString>
-    <LicenseKeyTypeFile>File</LicenseKeyTypeFile>
-    <IncludeLocalization>Include Localization</IncludeLocalization>
-    <IncludeFonts>Include Fonts</IncludeFonts>
-    <IncludeUITheme>Include UI Theme</IncludeUITheme>
-    <ThemeStyle>Theme Style:</ThemeStyle>
-    <ThemeBackground>Background:</ThemeBackground>
-    <UseCompressedScripts>Use Compressed Scripts</UseCompressedScripts>
-    <ShowOptions>Show Options</ShowOptions>
-    <HideOptions>Hide Options</HideOptions>
-    <Close>Close</Close>
-    <Cancel>Cancel</Cancel>
-    <Copy>Copy</Copy>
-    <ShowMore>Show More</ShowMore>
-    <SaveStandalone>Save Standalone</SaveStandalone>
-    <SaveStandalonePackage>Save Standalone Package</SaveStandalonePackage>
-    <SaveProjectPackage>Save Project Package</SaveProjectPackage>
-    <TrialVersion>Trial Version</TrialVersion>
-    <GroupConnections>Data Connections</GroupConnections>
-    <GroupParameters>Report Parameters</GroupParameters>
-    <GroupAddons>Addons</GroupAddons>
-    <ReadMore>Read More</ReadMore>
-    <ReportErrors>Unfortunately, due to errors, this report cannot be published!</ReportErrors>
-    <SearchLibraries>Search for libraries...</SearchLibraries>
-    <DownloadingLibraries>Downloading libraries...</DownloadingLibraries>
-    <CopyingLibraries>Copying project files...</CopyingLibraries>
-    <AddNewConnection>Add New Connection</AddNewConnection>
-    <ReplaceConnectionString>Replace Connection String</ReplaceConnectionString>
-    <ReplacePathToData>Replace Path to the Data</ReplacePathToData>
-    <Use>Use</Use>
-  </Publish>
 </Localization>

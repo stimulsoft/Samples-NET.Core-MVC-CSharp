@@ -25,37 +25,23 @@ namespace Show_Report_in_the_Viewer.Controllers
             return View();
         }
         
-        public IActionResult GetReport(string id)
+        public IActionResult GetReport(int id = 1)
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
 
             // Load report
             switch (id)
             {
                 // Load report snapshot
-                case "1":
+                case 1:
                     report.LoadDocument(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mdc"));
                     break;
 
                 // Load report template
-                case "2":
+                case 2:
                     report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
                     break;
-
-                // Load report snapshot
-                default:
-                    report.LoadDocument(StiNetCoreHelper.MapPath(this, "Reports/SimpleList.mdc"));
-                    break;
-            }
-
-            // Load data from XML file for report template
-            if (!report.IsDocument)
-            {
-                DataSet data = new DataSet("Demo");
-                data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
-
-                report.RegData(data);
             }
 
             return StiNetCoreViewer.GetReportResult(this, report);

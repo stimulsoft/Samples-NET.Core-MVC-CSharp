@@ -30,14 +30,8 @@ namespace Manage_Report_Printing_and_Exporting.Controllers
         public IActionResult GetReport()
         {
             // Create the report object
-            StiReport report = new StiReport();
+            var report = new StiReport();
             report.Load(StiNetCoreHelper.MapPath(this, "Reports/TwoSimpleLists.mrt"));
-
-            // Load data from XML file for report template
-            DataSet data = new DataSet("Demo");
-            data.ReadXml(StiNetCoreHelper.MapPath(this, "Reports/Data/Demo.xml"));
-
-            report.RegData(data);
             
             return StiNetCoreViewer.GetReportResult(this, report);
         }
@@ -49,7 +43,7 @@ namespace Manage_Report_Printing_and_Exporting.Controllers
 
         public IActionResult PrintReport()
         {
-            StiReport report = StiNetCoreViewer.GetReportObject(this);
+            var report = StiNetCoreViewer.GetReportObject(this);
 
             // Some actions with report when printing
 
@@ -58,8 +52,8 @@ namespace Manage_Report_Printing_and_Exporting.Controllers
 
         public IActionResult ExportReport()
         {
-            StiReport report = StiNetCoreViewer.GetReportObject(this);
-            StiRequestParams parameters = StiNetCoreViewer.GetRequestParams(this);
+            var report = StiNetCoreViewer.GetReportObject(this);
+            var parameters = StiNetCoreViewer.GetRequestParams(this);
 
             // Some actions with report when exporting
             report.ReportName = "MyReportName";
@@ -68,7 +62,7 @@ namespace Manage_Report_Printing_and_Exporting.Controllers
             if (parameters.ExportFormat == StiExportFormat.Pdf)
             {
                 // Change some export settings when exporting to PDF
-                StiPdfExportSettings settings = (StiPdfExportSettings)StiNetCoreViewer.GetExportSettings(this);
+                var settings = (StiPdfExportSettings)StiNetCoreViewer.GetExportSettings(this);
                 settings.CreatorString = "My Company";
 
                 return StiNetCoreViewer.ExportReportResult(this, report, settings);
