@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Stimulsoft.Reports.Engine.NetCore" Version="2020.3.2" />
+    <PackageReference Include="Stimulsoft.Reports.Engine.NetCore" Version="2020.4.1.1" />
   </ItemGroup>
 
 </Project>

@@ -16,7 +16,6 @@ This repository has some examples (Visual Studio Projects) each in different fol
 * Show Report in the Viewer
 * Showing Interactive Reports
 * Using Business Objects in the Report
-* Using the Web API with Angular
 * Web Demo
 
 They are all combined in a Visual Studio solution (.sln-file).

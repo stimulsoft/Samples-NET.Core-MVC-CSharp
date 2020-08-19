@@ -27,8 +27,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Export and Print Report fro
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Save Report Template in the Designer", "Save Report Template in the Designer\Save Report Template in the Designer.csproj", "{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Using the Web API with Angular", "Using the Web API with Angular\Using the Web API with Angular.csproj", "{74A520BF-0D4D-437E-90E3-27A5B074AE75}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Render Report in the Console App", "Render Report in the Console App\Render Report in the Console App.csproj", "{3CA3099F-8E1F-4C97-85D3-B5B3165578C5}"
 EndProject
 Global
@@ -85,10 +83,6 @@ Global
 		{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780B66EE-D3E9-44D6-B62F-0D6F9C619C8F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74A520BF-0D4D-437E-90E3-27A5B074AE75}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3CA3099F-8E1F-4C97-85D3-B5B3165578C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3CA3099F-8E1F-4C97-85D3-B5B3165578C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA3099F-8E1F-4C97-85D3-B5B3165578C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
